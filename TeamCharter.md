@@ -27,7 +27,11 @@ End: 2025-03-17
 - Point of Contact: Bennet
 - Architect: Sid
 - Tech Ops: Quentin
+<<<<<<< HEAD
+- Asset sourcing: Kokob
+=======
 - Asset sourcing? Koki? (pictures, embeds, etc)
+>>>>>>> main
 
 ### Project Management
 Milestones and User Stories will be managed on the [Github Project](https://github.com/users/shorian/projects/1/views/1). The same goes for various tasks which will be managed by the issue tracker and viewable both from the issues and project board.
@@ -71,9 +75,23 @@ Please read error messaged given to you within the git bash. Oftentimes the simp
 - I may spend too long on tasks with ambiguous requirements, especially design
 - I always have an opinion and I'm always ready to argue for it. Sometimes this results in hasty decisions when further brainstorming or requirements-gathering is warranted.
 
+<<<<<<< HEAD
+### Kokob - Asset Sourcing
+
+#### Strength
+- I am flexible
+- I am eager to learn more technical skills.
+- I am team oriented.
+
+#### Weaknesses
+- I am still working on improving my communication skills.
+- Sometimes I struggle with technical tools like Git and GitHub.
+
+=======
 ### Kokob - [TBD]
 
 [Placeholder Text]
+>>>>>>> main
 
 ### Quentin - Tech Ops
 
@@ -134,4 +152,8 @@ Signed By:
 - [x] Sid
 - [ ] Quentin
 - [x] Bennet
+<<<<<<< HEAD
+- [x] Kokob
+=======
 - [ ] Kokob
+>>>>>>> main
