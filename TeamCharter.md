@@ -1,5 +1,5 @@
 # Team Cookie: Charter
-*This is a living document, and will be expandedn and revised as project requirements are clarified.*
+*This is a living document, and will be expanded and revised as project requirements are clarified.*
 
 ## Project Overview
 - **Project Name:** GreatOutdoors
@@ -27,7 +27,11 @@ End: 2025-03-17
 - Point of Contact: Bennet
 - Architect: Sid
 - Tech Ops: Quentin
+<<<<<<< HEAD
 - Asset sourcing? Koki? (pictures, embeds, etc)
+=======
+- Asset sourcing: Kokob
+>>>>>>> main
 
 ### Project Management
 Milestones and User Stories will be managed on the [Github Project](https://github.com/users/shorian/projects/1/views/1). The same goes for various tasks which will be managed by the issue tracker and viewable both from the issues and project board.
@@ -71,6 +75,7 @@ Please read error messaged given to you within the git bash. Oftentimes the simp
 - I may spend too long on tasks with ambiguous requirements, especially design
 - I always have an opinion and I'm always ready to argue for it. Sometimes this results in hasty decisions when further brainstorming or requirements-gathering is warranted.
 
+<<<<<<< HEAD
 ### Kokob - [TBD]
 
 [Placeholder Text]
@@ -79,6 +84,21 @@ Please read error messaged given to you within the git bash. Oftentimes the simp
 
 [Placeholder Text]
 
+=======
+### Kokob - Asset Sourcing
+
+#### Strength
+- I am flexible
+- I am eager to learn more technical skills.
+- I am team oriented.
+
+#### Weaknesses
+- I am still working on improving my communication skills.
+- Sometimes I struggle with technical tools like Git and GitHub.
+
+### Quentin - Tech Ops
+
+>>>>>>> main
 #### Strengths
 - Good at project architectural design
 - Technically minded
@@ -132,6 +152,12 @@ To prepare for meetings, please try to have assigned tasks done the day before. 
 
 Signed By:
 - [x] Sid
+<<<<<<< HEAD
 - [ ] Quentin
 - [x] Bennet
 - [ ] Kokob
+=======
+- [x] Quentin
+- [x] Bennet
+- [x] Kokob
+>>>>>>> main
