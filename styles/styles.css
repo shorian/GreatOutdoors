@@ -17,7 +17,7 @@ h1 {
 img{
   width:300px;
   height:200px;
-  border:10px solid green;
+  border:10px solid var(--color-moss);
   color: var(--color-sandstone);
   border-radius:20px;
 }
