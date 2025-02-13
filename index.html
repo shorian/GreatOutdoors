@@ -1,30 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Welcome to the Great Outdoors!</title>
-<link rel="stylesheet" type="text/css" href="styles/styles.css">
-<script src="scripts/myscripts.js"></script>
-
-</head>
-
-<body>
-
-<h1>Welcome to the Great Outdoors!</h1>
-
-
-<img src = "images/outdoors.jpg" alt="Great Outdoors" onmouseover="showAlt(this)" onmouseout="hideAlt(this)">
-<figcaption>Your Adventure Awaits!</figcaption>
-
-<p id="alttext" style="font-size:50px"> <p>
-
-<ul>
-<li><a href="mountain.html">Climb the Mountain</a></li>
-<li><a href="forest.html">Wander the Forest</a></li>
-<li><a href="falls.html">See the Falls</a></li>
-<li><a href="ferry.html">Ride the Ferry</a></li>
-<li><a href="lake.html">Walk Around the Lake</a></li>
-<li><a href="park.html">Read in the Park</a></li>
-</ul>
-
-</body>
+<html lang="en">
+  <head>
+    <title>Welcome to the Great Outdoors!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script src="scripts/myscripts.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav id="sidebar">
+        <ul>
+          <li><a href="mountain.html">Climb the Mountain</a></li>
+          <li><a href="forest.html">Wander the Forest</a></li>
+          <li><a href="falls.html">See the Falls</a></li>
+          <li><a href="ferry.html">Ride the Ferry</a></li>
+          <li><a href="lake.html">Walk Around the Lake</a></li>
+          <li><a href="park.html">Read in the Park</a></li>
+        </ul>
+      </nav>
+      <header id="banner">
+        <img src="images/outdoors.jpg" alt="Great Outdoors" />
+        <h1>The Great Outdoors: A Poul Nichols Experience</h1>
+      </header>
+      <div class="content">
+        <main>
+          <img
+            src="images/outdoors.jpg"
+            alt="Great Outdoors"
+            onmouseover="showAlt(this)"
+            onmouseout="hideAlt(this)"
+          />
+          <figcaption>Your Adventure Awaits!</figcaption>
+          <p id="alttext"></p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            incidunt eaque eligendi molestias, exercitationem officiis
+            voluptate, perspiciatis ipsum laboriosam vero pariatur voluptas,
+            quis maiores repellat aspernatur suscipit maxime. Quam, aut.
+          </p>
+        </main>
+        <aside><h3>Latest</h3></aside>
+      </div>
+      <footer>
+        <ul>
+          <li><a href="">This is the footer</a></li>
+          <li>Random page</li>
+          <li>ko.fi or something</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
