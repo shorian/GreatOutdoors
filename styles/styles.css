@@ -23,7 +23,7 @@
   --space-xs: .375rem;
   --space-sm: .75rem;
   --space-med: 1.5rem;
-  --space-lg: 3rem;
+  --space-lg: 2.25rem;
 
   --corner-radius:5px;
 
@@ -41,6 +41,7 @@ html, body {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  line-height: 1.4;
 }
 
 header, footer {
@@ -168,8 +169,24 @@ div.content {
 
 div.content > * {
   background-color: var(--color-sandstone-l1);
-  padding: var(--space-med);
+  padding: var(--space-med) var(--space-lg);
   border-radius: var(--corner-radius);
+}
+
+div.content h2, h3 {
+  color: var(--color-andesite);
+}
+
+div.content h2 {
+  margin: 0 var(--space-sm) var(--space-sm) var(--space-sm);
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+div.content h3 {
+  font-size: 1.25rem;
+  margin: var(--space-sm) 0;
+  font-weight: 600;
 }
 
 img,
@@ -184,9 +201,29 @@ h1 {
   font-optical-sizing: auto;
 }
 
+/* Links */
+
 a {
   color: var(--color-moss);
   text-decoration: underline dotted;
+}
+
+a:hover {
+  color: var(--color-moss-d1);
+}
+
+a:active {
+  color: var(--color-andesite);
+}
+
+/* Aside */
+
+aside > ul {
+  padding: 0 var(--space-sm);
+}
+
+aside li {
+  margin: var(--space-xs) 0;
 }
 
 /* Header + Footer defaults */
@@ -224,10 +261,6 @@ footer#site-footer a {
 
 /* Entry Styles */
 
-div.entry {
-  padding: 0 var(--space-sm);
-}
-
 dl.trail-stats {
   border-top: 1px solid var(--color-sandstone-d1);
   border-bottom: 1px solid var(--color-sandstone-d1);
@@ -246,11 +279,16 @@ dl.trail-stats dt::after {
   content: ":"
 }
 
-footer.entry > ul {
-  min-height: 3rem;
-  border-top: 1px solid var(--color-sandstone-d1);
-  padding: 0 var(--space-sm);
+div.entry > p {
+  margin: 1rem;
 }
+
+footer.entry {
+  border-top: 1px solid var(--color-sandstone-d1);
+  padding: 1rem 1rem 0 1rem;
+}
+
+
 
 /* Figure styles */
 
