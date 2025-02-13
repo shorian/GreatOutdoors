@@ -9,26 +9,72 @@
   /* Shades */
   --color-sandstone-l1: #eae3d6;
   --color-sandstone-l2: #f8f6f2;
+  --color-sandstone-d1: #C8B592;
 
   --color-andesite-d1: #2e2427;
 
   --color-moss-d1: #414e2c;
 
-  box-sizing: border-box;
+  /* Fonts */
+  --heading-font:"Montserrat", Georgia, Palatino, Times, serif;
+  --body-font: "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif;
 
+  /* Spacers */
+  --space-xs: .375rem;
+  --space-sm: .75rem;
+  --space-med: 1.5rem;
+  --space-lg: 2.25rem;
+
+  --corner-radius:5px;
+
+}
+
+/* Reset */
+
+html, body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
+  min-height: 100vh;
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  line-height: 1.4;
 }
 
-header#banner {
-  width: 100%;
-  height: auto;
+header, footer {
+  box-sizing: border-box;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  margin-top: 0;
+}
+
+ul, ol, dl, dt, dd {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-sandstone);
+  color: var(--color-andesite);
+  font-family: var(--body-font)
+}
+
+div#wrapper {
+  display: grid;
+  grid-template-columns: minmax(auto, 250px) 1fr;
+  grid-template-rows: 150px auto 4rem;
+  row-gap: var(--space-med);
+}
+
+/* Banner styles */
+
+header#banner {
+  padding: var(--space-med);
   background-color: var(--color-moss);
   background-image: url("https://www.nps.gov/npgallery/GetAsset/9b948eb2-cffb-4783-bc8d-a952587d7f84/proxy/hires?");
   background-repeat: no-repeat;
@@ -36,60 +82,58 @@ header#banner {
   background-position: 50% 30%;
 
   display: flex;
-  flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-around;
-}
-
-header#banner > img {
-  height: 60%;
-  border: 2px solid var(--color-gold);
-  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
 }
 
 header#banner > h1 {
   color: var(--color-andesite);
   font-size: 50px;
-
   text-shadow: 1px 0 var(--color-gold), -1px 0 var(--color-gold),
     0 1px var(--color-gold), 0 -1px var(--color-gold);
+  margin: 0;
 }
 
-body {
-  background-color: var(--color-sandstone);
-  color: var(--color-andesite);
-}
+/* End banner styles */
 
-/* header {
-
-} */
+/* Navbar styles */
 
 nav#sidebar {
-  height: 100vh;
-  /* position: sticky; */
   grid-column: 1;
   grid-row: 1 / 3;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: var(--color-andesite-d1);
+  font-size: 1.3rem;
+  padding: var(--space-sm);
+}
 
-  padding-top: 15vh;
-  border-right: 1px solid var(--color-moss);
-  font-size: 1.3em;
+/* TODO: Figure out why the navbar stubbornly remains taller
+than viewport despite my best efforts. */
+
+img#logo {
+  /* border: 2px solid var(--color-gold); */
+  height: calc(150px - var(--space-med));
+  border-radius: var(--corner-radius);
+  display: block;
+  padding-bottom: var(--space-xs);
 }
 
 nav#sidebar > ul {
   list-style-type: none;
-  padding: 0;
-  padding-right: 4px;
-
 }
 
 nav#sidebar > ul > li {
-  margin: 5px;
-  border-radius: 5px;
+  margin: var(--space-xs) 0;
+  border-radius: var(--corner-radius);
   padding: 10px;
 
   background-color: var(--color-andesite);
 
-  font-family: "Montserrat", serif;
+  font-family: var(--heading-font);
   font-optical-sizing: auto;
 }
 
@@ -97,14 +141,9 @@ nav#sidebar > ul > li:hover {
   background-color: var(--color-moss);
 }
 
-nav#sidebar > ul > li > a:link {
+nav#sidebar > ul > li > a {
   text-decoration: none;
   color: var(--color-gold);
-}
-
-nav#sidebar > ul > li > a:visited {
-  text-decoration: none;
-  color: var(--color-blue);
 }
 
 nav#sidebar > ul > li > a:hover {
@@ -117,23 +156,37 @@ nav#sidebar > ul > li > a:active {
   color: var(--color-gold);
 }
 
-div#wrapper {
-  display: grid;
-  grid-template-columns: minmax(auto, 250px) 1fr;
-  grid-template-rows: 150px auto 100px;
-  row-gap: 15px;
-}
+/* End navbar styles */
+
+/* Content container */
 
 div.content {
+  margin: 0 var(--space-med);
   display: grid;
-  gap: 15px;
   grid-template-columns: 3fr 1fr;
-  padding: 1.5rem;
+  column-gap: var(--space-med);
 }
 
 div.content > * {
   background-color: var(--color-sandstone-l1);
-  padding: 1rem;
+  padding: var(--space-med) var(--space-lg);
+  border-radius: var(--corner-radius);
+}
+
+div.content h2, h3 {
+  color: var(--color-andesite);
+}
+
+div.content h2 {
+  margin: 0 var(--space-sm) var(--space-sm) var(--space-sm);
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+div.content h3 {
+  font-size: 1.25rem;
+  margin: var(--space-sm) 0;
+  font-weight: 600;
 }
 
 img,
@@ -142,40 +195,127 @@ video {
   max-width: 100%;
 }
 
-iframe {
-  border: 0;
-}
-
 h1 {
   color: var(--color-andesite);
-  font-family: "Montserrat", serif;
+  font-family: var(--heading-font);
   font-optical-sizing: auto;
 }
 
+/* Links */
+
 a {
   color: var(--color-moss);
+  text-decoration: underline dotted;
 }
 
-img {
-  border-radius: 20px;
+a:hover {
+  color: var(--color-moss-d1);
+}
+
+a:active {
+  color: var(--color-andesite);
+}
+
+/* Aside */
+
+aside > ul {
+  padding: 0 var(--space-sm);
+}
+
+aside li {
+  margin: var(--space-xs) 0;
+}
+
+/* Header + Footer defaults */
+
+header > ul, footer > ul {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header li, footer li {
+  list-style-type: none;
+}
+
+/* Site footer */
+
+footer#site-footer {
+  grid-column: 2 / 3;
+  max-width: 100%;
+  background-color: var(--color-andesite-d1);
+  color: var(--color-sandstone-l1);
+  font-size: .9rem;
+}
+
+footer#site-footer li {
+  padding: 0 var(--space-lg);
+  text-align: center;
+}
+
+footer#site-footer a {
+  color: var(--color-sandstone-d1);
+}
+
+/* Entry Styles */
+
+dl.trail-stats {
+  border-top: 1px solid var(--color-sandstone-d1);
+  border-bottom: 1px solid var(--color-sandstone-d1);
+  padding: var(--space-xs) var(--space-sm);
+  color: var(--color-andesite);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+dl.trail-stats dt {
+  font-weight: bold;
+}
+
+dl.trail-stats dt::after {
+  content: ":"
+}
+
+div.entry > p {
+  margin: 1rem;
+}
+
+footer.entry {
+  border-top: 1px solid var(--color-sandstone-d1);
+  padding: 1rem 1rem 0 1rem;
+}
+
+
+
+/* Figure styles */
+
+figure {
+  border: 1px solid var(--color-sandstone);
+  border-radius: var(--corner-radius);
+  background-color: var(--color-sandstone-l2);
+  font-size: .9rem;
+  padding: var(--space-xs);
+  width: 40%;
+}
+
+figure > img {
+  max-width: 100%;
 }
 
 figcaption {
-  width: 315px;
-  text-align: left;
-  margin-left: 50px;
+  text-align: center;
+  margin: var(--space-xs) 0;
 }
 
-footer {
-  grid-column: 2 / 3;
+/* Utility Classes */
+
+.fl {
+  float: left;
 }
 
-footer ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-footer li {
-  list-style-type: none;
+.fr {
+  float: right;
 }
