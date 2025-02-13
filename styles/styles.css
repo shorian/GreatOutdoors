@@ -7,20 +7,57 @@
   --color-blue: #6bbfd6;
 
   /* Shades */
-  --color-sandstone-l1: #EAE3D6;
-  --color-sandstone-l2: #F8F6F2;
+  --color-sandstone-l1: #eae3d6;
+  --color-sandstone-l2: #f8f6f2;
 
-  --color-andesite-d1: #2E2427;
+  --color-andesite-d1: #2e2427;
 
-  --color-moss-d1: #414E2C;
-
+  --color-moss-d1: #414e2c;
 
   box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+
+  background-color: var(--color-moss);
+  background-image: url("https://www.nps.gov/npgallery/GetAsset/9b948eb2-cffb-4783-bc8d-a952587d7f84/proxy/hires?");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 30%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#banner > img {
+  height: 60%;
+  border: 2px solid var(--color-gold);
+  border-radius: 5px;
+}
+
+#banner > h1 {
+  color: var(--color-andesite);
+  font-size: 50px;
+
+  text-shadow: 1px 0 var(--color-gold), -1px 0 var(--color-gold),
+    0 1px var(--color-gold), 0 -1px var(--color-gold);
 }
 
 body {
   background-color: var(--color-sandstone);
-  color: var(--color-andesite)
+  color: var(--color-andesite);
 }
 
 /* header {
@@ -64,11 +101,13 @@ iframe {
 }
 
 h1 {
-  color: var(--color-moss);
+  color: var(--color-andesite);
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
 }
 
 a {
-  color: var(--color-moss)
+  color: var(--color-moss);
 }
 
 img {
@@ -87,11 +126,10 @@ footer {
 
 footer ul {
   display: flex;
-	align-items: center;
-	justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
 
 footer li {
   list-style-type: none;
-
 }

@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Welcome to the Great Outdoors!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <script src="scripts/myscripts.js"></script>
   </head>
-
   <body>
     <div id="wrapper">
       <nav id="sidebar">
@@ -18,7 +23,10 @@
           <li><a href="park.html">Read in the Park</a></li>
         </ul>
       </nav>
-      <header><h1>Welcome to the Great Outdoors!</h1></header>
+      <header id="banner">
+        <img src="images/outdoors.jpg" alt="Great Outdoors" />
+        <h1>The Great Outdoors: A Poul Nichols Experience</h1>
+      </header>
       <div class="content">
         <main>
           <img
@@ -28,8 +36,7 @@
             onmouseout="hideAlt(this)"
           />
           <figcaption>Your Adventure Awaits!</figcaption>
-
-          <p id="alttext" style="font-size: 50px"></p>
+          <p id="alttext"></p>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
             incidunt eaque eligendi molestias, exercitationem officiis
@@ -41,9 +48,9 @@
       </div>
       <footer>
         <ul>
-            <li><a href="">This is the footer</a></li>
-            <li>Random page</li>
-            <li>ko.fi or something</li>
+          <li><a href="">This is the footer</a></li>
+          <li>Random page</li>
+          <li>ko.fi or something</li>
         </ul>
       </footer>
     </div>
