@@ -1,22 +1,142 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Welcome to the Great Outdoors!</title>
-<link rel="stylesheet" type="text/css" href="styles/styles.css">
-<script src="scripts/myscripts.js"></script>
-</head>
-<body>
-
-<h1>Around the Water's Edge</h1>
-
-<img src = "images/lake.jpg" alt="Lake" onmouseover="showAlt(this)" onmouseout="hideAlt(this)">
-<figcaption>Don't fall In</figcaption>
-
-<p id="alttext" style="font-size:50px"> <p>
-
-<ul>
-<li><a href="index.html">Table of Contents</a></li>
-</ul>
-
-</body>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <!-- <script src="scripts/myscripts.js"></script> -->
+    <title>Welcome to the Great Outdoors!</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav id="sidebar">
+        <img id="logo" src="images/outdoors.jpg" alt="Great Outdoors" />
+        <ul>
+          <li onclick="location.href="./index.html';">
+            <a href="index.html">Great Outdoors</a>
+          </li>
+          <li onclick="location.href='./mountain.html';">
+            <a href="mountain.html">Climb the Mountain</a>
+          </li>
+          <li onclick="location.href='./forest.html';">
+            <a href="forest.html">Wander the Forest</a>
+          </li>
+          <li onclick="location.href='./falls.html';">
+            <a href="falls.html">See the Falls</a>
+          </li>
+          <li onclick="location.href='./ferry.html';">
+            <a href="ferry.html">Ride the Ferry</a>
+          </li>
+          <li onclick="location.href='./lake.html';">
+            <a href="lake.html">Walk Around the Lake</a>
+          </li>
+          <li onclick="location.href='./park.html';">
+            <a href="park.html">Read in the Park</a>
+          </li>
+        </ul>
+      </nav>
+      <header id="banner">
+        <h1>The Great Outdoors: A Poul Nichols Experience</h1>
+      </header>
+      <div class="content">
+        <main>
+          <div class="entry">
+            <header>
+              <h2>Trip Report: Lake 22</h2>
+              <dl class="trail-stats">
+                <div>
+                  <dt>Length</dt>
+                  <dd>2.0 miles</dd>
+                </div>
+                <div>
+                  <dt>Location</dt>
+                  <dd>Granite Falls?</dd>
+                </div>
+                <div>
+                    <dt>Passes Required</dt>
+                    <dd>None</dd>
+                </div>
+                <div>
+                  <dt>Elevation Gain</dt>
+                  <dd>2000 feet</dd>
+                </div>
+                <div>
+                  <dt>Challenge</dt>
+                  <dd>Medium</dd>
+                </div>
+              </dl>
+            </header>
+            <p>
+                <b>Notable features:</b>
+                Lots of dogs.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos quia odit laudantium, odio quod tempora labore omnis
+              nisi esse dolorem, rerum ex quaerat veritatis perspiciatis
+              suscipit! Adipisci itaque debitis blanditiis.
+            </p>
+            <p>
+                Suspendisse porttitor neque ac quam semper, ut suscipit justo
+                tempor. Ut consequat tincidunt urna ac vulputate. In ut
+                scelerisque augue. Quisque vitae cursus ligula. Maecenas eget
+                mattis dolor. Pellentesque gravida et erat ac efficitur. Aliquam
+                enim nibh, viverra nec eleifend eu, luctus at augue.
+            </p>
+            <figure class="fr">
+              <img src="images/lake.jpg" alt="Lake 22" />
+              <figcaption>
+                The water is super cold!
+              </figcaption>
+            </figure>
+            <p>
+              Donec eu ornare eros. Nulla non turpis eget dui dapibus elementum
+              ut vel tortor. Aenean faucibus elementum elit, quis dignissim
+              enim. In efficitur sit amet mauris at laoreet. Phasellus at felis
+              in lorem pellentesque mattis eget lacinia diam. Donec dui arcu,
+              malesuada et tincidunt ac, pretium vitae tellus. Aliquam eget
+              eleifend dui. Pellentesque efficitur faucibus purus, id venenatis
+              mauris pellentesque id. Suspendisse eleifend dignissim eros a
+              volutpat. Proin elementum tincidunt ligula consectetur ornare.
+              Mauris nunc neque, convallis nec velit at, ullamcorper pulvinar
+              orci. Sed dui nisi, fermentum in euismod vel, egestas a felis.
+            </p>
+            <p>
+              Nullam cursus leo nec dui gravida eleifend. Vivamus sollicitudin
+              posuere turpis, a accumsan ligula ultrices ac. Vivamus molestie
+              ligula non erat facilisis condimentum. Morbi elit neque, dignissim
+              vel auctor non, ullamcorper ut nulla. Maecenas id purus a augue
+              gravida dapibus in dictum lectus. Ut cursus luctus arcu, non
+              sodales ex hendrerit in. Aliquam erat volutpat. Ut hendrerit enim
+              lectus, lacinia malesuada felis mollis non.
+            </p>
+            <a href=""><b>More about my experience here!</b></a>
+            <footer class="entry">
+              <ul>
+                <li>February 13, 2025</li>
+                <li><a href="">7 Comments</a></li>
+              </ul>
+            </footer>
+          </div>
+        </main>
+        <aside>
+          <iframe src="recentUpdates.html" seamless scrolling=""no" height="400"></iframe>
+        </aside>
+      </div>
+      <footer id="site-footer">
+        <ul>
+          <li>©2025 Poul Nichols</li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Terms</a></li>
+          <!-- <li><a href=""></a></li> -->
+          <li>Enjoying The Great Outdoors? <a href="">Buy me a coffee</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
