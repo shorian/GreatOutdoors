@@ -7,7 +7,12 @@ Kokob
 =======
 # GreatOutdoors
 
+<<<<<<< HEAD
 Sid
 Kokob
 Bennet
->>>>>>> main
+
+=======
+Sid  
+Kokob  
+Bennet  
