@@ -195,6 +195,10 @@ video {
   max-width: 100%;
 }
 
+img.destImg {
+  border-radius:15px;
+}
+
 h1 {
   color: var(--color-andesite);
   font-family: var(--heading-font);
