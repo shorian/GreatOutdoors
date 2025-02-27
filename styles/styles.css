@@ -47,10 +47,6 @@ html, body {
   line-height: 1.4;
 }
 
-header, footer {
-  box-sizing: border-box;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   margin-top: 0;
@@ -117,10 +113,10 @@ nav#sidebar {
 than viewport despite my best efforts. */
 
 img#logo {
-  /* border: 2px solid var(--color-gold); */
   height: calc(150px - var(--space-med));
   border-radius: var(--corner-radius);
   display: block;
+  margin: 0 auto;
   padding-bottom: var(--space-xs);
 }
 
