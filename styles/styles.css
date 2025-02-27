@@ -29,10 +29,13 @@
 
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Reset */
 
 html, body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -42,10 +45,6 @@ html, body {
   vertical-align: baseline;
   background: transparent;
   line-height: 1.4;
-}
-
-header, footer {
-  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,7 +79,6 @@ header#banner {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 50% 30%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,10 +113,10 @@ nav#sidebar {
 than viewport despite my best efforts. */
 
 img#logo {
-  /* border: 2px solid var(--color-gold); */
   height: calc(150px - var(--space-med));
   border-radius: var(--corner-radius);
   display: block;
+  margin: 0 auto;
   padding-bottom: var(--space-xs);
 }
 
