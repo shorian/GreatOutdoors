@@ -137,6 +137,9 @@ nav#sidebar > ul > li {
 
 nav#sidebar > ul > li:hover {
   background-color: var(--color-moss);
+  border: 1px solid var(--color-gold);
+  transform: translate(10px, 5px);
+
 }
 
 nav#sidebar > ul > li > a {
