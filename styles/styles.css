@@ -325,7 +325,6 @@ figcaption {
 
 main.destination-cards {
   display: grid;
-  padding: var(--spacer-med);
   column-gap: var(--spacer-med);
   row-gap: var(--spacer-sm);
   grid-template-columns: repeat(3, 1fr);
@@ -337,29 +336,31 @@ main.destination-cards {
 main.destination-cards > div {
   position: relative;
   cursor: pointer;
+  width: 100%;
 }
 
 main.destination-cards > div > h2 {
+  display: block;
   position: absolute;
-  top: 10%;
 
   background-color: var(--color-andesite);
   width: 100%;
   text-align: center;
-  font-size: 200%;
+  font-size: 1vw;
   font-weight: bold;
 
   color: var(--color-gold);
-  margin: 0;
+  margin: 5% 0 0 0;
 }
 
 main.destination-cards > div > img {
   display: block;
-  width: 13vw;
-  height: 13vw;
+  aspect-ratio: 1 / 1;
+  width: 66%;
   border-radius: var(--destination-card-radius);
   border-color: var(--color-andesite);
   border: 5px solid;
+  margin: auto;
 }
 
 main.destination-cards > div:hover > h2 {
