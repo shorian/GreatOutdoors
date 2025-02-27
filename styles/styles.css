@@ -26,6 +26,7 @@
   --space-lg: 2.25rem;
 
   --corner-radius:5px;
+  --destination-card-radius: 10px;
 
 }
 
@@ -195,10 +196,6 @@ video {
   max-width: 100%;
 }
 
-img.destImg {
-  border-radius:15px;
-}
-
 h1 {
   color: var(--color-andesite);
   font-family: var(--heading-font);
@@ -323,3 +320,48 @@ figcaption {
 .fr {
   float: right;
 }
+
+/* Destination Card Styles */
+
+main.destination-cards {
+  display: grid;
+  padding: 150px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+main.destination-cards > div {
+  position: relative;
+  cursor: pointer;
+}
+
+main.destination-cards > div > h1 {
+  position: absolute;
+  top: 10%;
+
+  background-color: var(--color-andesite);
+  width: 100%;
+  text-align: center;
+
+  color: var(--color-gold);
+  margin: 0;
+}
+
+main.destination-cards > div > img {
+  display: block;
+  width: 350px;
+  height: 350px;
+  border-radius: var(--destination-card-radius);
+  border-color: var(--color-andesite);
+  border: 5px solid;
+}
+
+main.destination-cards > div:hover > h1 {
+  background-color: var(--color-moss);
+}
+
+main.destination-cards > div:hover > img {
+  border-color: var(--color-moss);
+}
+

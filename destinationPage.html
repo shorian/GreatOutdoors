@@ -32,16 +32,32 @@
         <h1>The Great Outdoors: A Poul Nichols Experience</h1>
       </header>
       <div class="content">
-        <main>
-          <div class="entry">
-            <center>
-            <a href="falls.html"><img style="width:200px;height:200px" class="destImg" hspace=25px vspace=25px src="images/waterfall.jpg" alt="falls" /></a>
-            <a href="ferry.html"><img style="width:200px;height:200px" class="destImg" hspace=25px vspace=25px src="images/ferry.jpg" alt="ferry" /></a>
-            <a href="forest.html"><img style="width:200px;height:200px" class="destImg" hspace=25px vspace=25px src="images/forest.jpg" alt="forest" /></a>
-            <a href="lake.html"><img style="width:200px;height:200px" class="destImg" hspace=25px vspace=25px src="images/lake.jpg" alt="lake" /></a>
-            <a href="mountain.html"><img style="width:200px;height:200px" class="destImg" hspace=25px vspace=25px src="images/mountain.jpg" alt="mountain" /></a>
-            <a href="park.html"><img style="width:200px;height:200px" class="destImg" hspace=25px vspace=25px src="images/park.jpg" alt="park" /></a>
-          </center>
+        <main class="destination-cards">
+          <!-- The following definitely could be better represented using some web components. -->
+          <div onclick="location.href='./falls.html'">
+            <h1>Ranger Falls</h1>
+            <img hspace=25px vspace=25px src="images/waterfall.jpg" alt="falls" />
+          </div>
+          <div onclick="location.href='./ferry.html'">
+            <h1>Kingston Ferry</h1>
+            <img hspace=25px vspace=25px src="images/ferry.jpg" alt="ferry" />
+          </div>
+          <div onclick="location.href='./forest.html'">
+            <h1>Deer Canyon</h1>
+            <img hspace=25px vspace=25px src="images/forest.jpg" alt="forest" />
+          </div>
+          <div onclick="location.href='./lake.html'">
+            <h1>Lake 22</h1>
+            <img hspace=25px vspace=25px src="images/lake.jpg" alt="lake" />
+          </div>
+          <div onclick="location.href='./mountain.html'">
+            <h1>Mountain</h1>
+            <img hspace=25px vspace=25px src="images/mountain.jpg" alt="mountain" />
+          </div>
+          <div onclick="location.href='./park.html'">
+            <h1>Park Park</h1>
+            <img hspace=25px vspace=25px src="images/park.jpg" alt="park" />
+          </div>
         </main>
         <aside>
           <iframe src="recentUpdates.html" style="border:0" seamless height="400"></iframe>
