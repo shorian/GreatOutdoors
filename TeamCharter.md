@@ -27,14 +27,6 @@ End: 2025-03-17
 - Point of Contact: Bennet
 - Architect: Sid
 - Tech Ops: Quentin
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Asset sourcing: Kokob
-=======
-- Asset sourcing? Koki? (pictures, embeds, etc)
-=======
-- Asset sourcing? Koki? (pictures, embeds, etc)
-=======
 - Asset sourcing: Kokob
 
 ### Project Management
@@ -79,30 +71,6 @@ Please read error messaged given to you within the git bash. Oftentimes the simp
 - I may spend too long on tasks with ambiguous requirements, especially design
 - I always have an opinion and I'm always ready to argue for it. Sometimes this results in hasty decisions when further brainstorming or requirements-gathering is warranted.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Kokob - Asset Sourcing
-
-#### Strength
-- I am flexible
-- I am eager to learn more technical skills.
-- I am team oriented.
-
-#### Weaknesses
-- I am still working on improving my communication skills.
-- Sometimes I struggle with technical tools like Git and GitHub.
-
-=======
-=======
-### Kokob - [TBD]
-
-[Placeholder Text]
-
-### Quentin - Tech Ops
-
-[Placeholder Text]
-
-=======
 ### Kokob - Asset Sourcing
 
 #### Strength
@@ -169,17 +137,6 @@ To prepare for meetings, please try to have assigned tasks done the day before. 
 
 Signed By:
 - [x] Sid
-<<<<<<< HEAD
-- [ ] Quentin
-- [x] Bennet
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [x] Kokob
-=======
-- [ ] Kokob
-=======
-- [ ] Kokob
-=======
 - [x] Quentin
 - [x] Bennet
 - [x] Kokob
