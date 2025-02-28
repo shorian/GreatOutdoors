@@ -24,28 +24,19 @@ class NavBar extends HTMLElement {
 
     this.innerHTML = `
          <nav id="sidebar">
-        <img id="logo" src="images/logo.png" alt="Great Outdoors" />
+        <a href=""><img id="logo" src="images/logo.png" alt="Great Outdoors" /></a>
         <ul>
-          <li onclick="location.href="./index.html';">
-            <a href="index.html">Great Outdoors</a>
+          <li>
+            <a href="index.html">Home</a>
           </li>
-          <li onclick="location.href='./mountain.html';">
-            <a href="mountain.html">Climb the Mountain</a>
+          <li>
+            <a href="destinationPage.html">Destinations</a>
           </li>
-          <li onclick="location.href='./forest.html';">
-            <a href="forest.html">Wander the Forest</a>
+          <li>
+            <a href="index.html">Blog</a>
           </li>
-          <li onclick="location.href='./falls.html';">
-            <a href="falls.html">See the Falls</a>
-          </li>
-          <li onclick="location.href='./ferry.html';">
-            <a href="ferry.html">Ride the Ferry</a>
-          </li>
-          <li onclick="location.href='./lake.html';">
-            <a href="lake.html">Walk Around the Lake</a>
-          </li>
-          <li onclick="location.href='./park.html';">
-            <a href="park.html">Read in the Park</a>
+          <li>
+            <a href="contact.html">Contact</a>
           </li>
         </ul>
       </nav>
