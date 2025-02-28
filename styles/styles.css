@@ -127,7 +127,6 @@ nav#sidebar > ul {
 nav#sidebar > ul > li {
   margin: var(--space-xs) 0;
   border-radius: var(--corner-radius);
-  padding: 10px;
 
   background-color: var(--color-andesite);
 
@@ -143,6 +142,8 @@ nav#sidebar > ul > li:hover {
 }
 
 nav#sidebar > ul > li > a {
+  display: block;
+  padding: 10px;
   text-decoration: none;
   color: var(--color-gold);
 }
