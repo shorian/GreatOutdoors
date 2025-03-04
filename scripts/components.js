@@ -33,7 +33,7 @@ class NavBar extends HTMLElement {
             <a href="destinationPage.html">Destinations</a>
           </li>
           <li>
-            <a href="index.html">Blog</a>
+            <a href="blogHome.html">Blog</a>
           </li>
           <li>
             <a href="contact.html">Contact</a>
