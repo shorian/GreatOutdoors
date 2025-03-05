@@ -222,7 +222,7 @@ a:active {
 /* Recent Posts */
 
 #recent > ul {
-  padding: 0 var(--space-sm);
+  list-style-type: none;
 }
 
 #recent li {
