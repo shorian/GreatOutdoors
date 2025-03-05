@@ -169,23 +169,23 @@ div.content {
   column-gap: var(--space-med);
 }
 
-div.content > * {
+.cell {
   background-color: var(--color-sandstone-l1);
   padding: var(--space-med) var(--space-lg);
   border-radius: var(--corner-radius);
 }
 
-div.content h2, h3 {
+.cell h2, h3 {
   color: var(--color-andesite);
 }
 
-div.content h2 {
+.cell h2 {
   margin: 0 var(--space-sm) var(--space-sm) var(--space-sm);
   font-size: 2rem;
   font-weight: normal;
 }
 
-div.content h3 {
+.cell h3 {
   font-size: 1.25rem;
   margin: var(--space-sm) 0;
   font-weight: 600;
@@ -218,7 +218,7 @@ a:active {
   color: var(--color-andesite);
 }
 
-/* Aside */
+/* Recent Posts */
 
 aside > ul {
   padding: 0 var(--space-sm);
