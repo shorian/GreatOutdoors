@@ -44,5 +44,27 @@ class NavBar extends HTMLElement {
   }
 }
 
+class Comments extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.setAttribute("style", "display: contents;");
+
+    this.innerHTML = `
+    <section>
+        <div
+          id="convocomet-widget"
+          data-page=""
+          data-site="71937473052531"
+          data-theme="light"
+        ></div>
+      </section>
+      `;
+  }
+}
+
 customElements.define("banner-component", Banner);
 customElements.define("navbar-component", NavBar);
+customElements.define("comments-component", Comments);
