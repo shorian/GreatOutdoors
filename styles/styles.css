@@ -9,24 +9,23 @@
   /* Shades */
   --color-sandstone-l1: #eae3d6;
   --color-sandstone-l2: #f8f6f2;
-  --color-sandstone-d1: #C8B592;
+  --color-sandstone-d1: #c8b592;
 
   --color-andesite-d1: #2e2427;
 
   --color-moss-d1: #414e2c;
 
   /* Fonts */
-  --heading-font:"Montserrat", Georgia, Palatino, Times, serif;
+  --heading-font: "Montserrat", Georgia, Palatino, Times, serif;
   --body-font: "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif;
 
   /* Spacers */
-  --space-xs: .375rem;
-  --space-sm: .75rem;
+  --space-xs: 0.375rem;
+  --space-sm: 0.75rem;
   --space-med: 1.5rem;
   --space-lg: 2.25rem;
 
-  --corner-radius:5px;
-
+  --corner-radius: 5px;
 }
 
 * {
@@ -35,7 +34,8 @@
 
 /* Reset */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   border: 0;
@@ -47,12 +47,21 @@ html, body {
   line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
   margin-top: 0;
 }
 
-ul, ol, dl, dt, dd {
+ul,
+ol,
+dl,
+dt,
+dd {
   padding: 0;
   margin: 0;
 }
@@ -60,7 +69,7 @@ ul, ol, dl, dt, dd {
 body {
   background-color: var(--color-sandstone);
   color: var(--color-andesite);
-  font-family: var(--body-font)
+  font-family: var(--body-font);
 }
 
 #wrapper {
@@ -138,7 +147,6 @@ than viewport despite my best efforts. */
   background-color: var(--color-moss);
   border: 1px solid var(--color-gold);
   transform: translate(15px, 5px);
-
 }
 
 #navbar > ul > li > a {
@@ -176,7 +184,8 @@ div.content {
   border-radius: var(--corner-radius);
 }
 
-.cell h2, h3 {
+.cell h2,
+h3 {
   color: var(--color-andesite);
 }
 
@@ -231,7 +240,8 @@ a:active {
 
 /* Header + Footer defaults */
 
-header > ul, footer > ul {
+header > ul,
+footer > ul {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -239,7 +249,8 @@ header > ul, footer > ul {
   justify-content: space-between;
 }
 
-header li, footer li {
+header li,
+footer li {
   list-style-type: none;
 }
 
@@ -250,7 +261,7 @@ header li, footer li {
   max-width: 100%;
   background-color: var(--color-andesite-d1);
   color: var(--color-sandstone-l1);
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 #site-footer li {
@@ -279,7 +290,7 @@ dl.trail-stats dt {
 }
 
 dl.trail-stats dt::after {
-  content: ":"
+  content: ":";
 }
 
 div.entry > p {
@@ -291,15 +302,13 @@ footer.entry {
   padding: 1rem 1rem 0 1rem;
 }
 
-
-
 /* Figure styles */
 
 figure {
   border: 1px solid var(--color-sandstone);
   border-radius: var(--corner-radius);
   background-color: var(--color-sandstone-l2);
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: var(--space-xs);
   width: 40%;
 }
