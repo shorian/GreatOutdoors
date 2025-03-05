@@ -75,7 +75,8 @@ class Comments extends HTMLElement {
     this.setAttribute("style", "display: contents;");
 
     this.innerHTML = `
-    <section>
+    <section class="cell">
+    <h3>Comments</h3>
         <div
           id="convocomet-widget"
           data-page=""
