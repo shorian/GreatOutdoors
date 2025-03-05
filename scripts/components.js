@@ -23,7 +23,7 @@ class NavBar extends HTMLElement {
     this.setAttribute("style", "display: contents;");
 
     this.innerHTML = `
-         <nav id="sidebar">
+         <nav id="navbar">
         <a href=""><img id="logo" src="images/logo.png" alt="Great Outdoors" /></a>
         <ul>
           <li>
@@ -44,5 +44,28 @@ class NavBar extends HTMLElement {
   }
 }
 
+class RecentPosts extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.setAttribute("style", "display: contents;");
+
+    this.innerHTML = `
+    <nav id="recent" class="cell">
+            <h3>Recent Posts</h3>
+    <ul>
+        <li><a href="./lake.html">Trip Report: Lake 22</a><br>February 13, , 2025</li>
+        <li><a href="">Quieter spots for snowshoeing close to home</a><br> January 27, 2025</li>
+        <li><a href="./forest.html">Trip Report: Deer Canyon</a><br> December 19, 2025</li>
+        <li><a href="">My new favorite daypack</a><br> November 30, 2025</li>
+    </ul>
+    </nav>
+      `;
+  }
+}
+
 customElements.define("banner-component", Banner);
 customElements.define("navbar-component", NavBar);
+customElements.define("recent-posts", RecentPosts);
