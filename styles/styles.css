@@ -167,6 +167,7 @@ div.content {
   display: grid;
   grid-template-columns: 3fr 1fr;
   column-gap: var(--space-med);
+  align-content: start;
 }
 
 .cell {
@@ -220,11 +221,11 @@ a:active {
 
 /* Recent Posts */
 
-aside > ul {
+#recent > ul {
   padding: 0 var(--space-sm);
 }
 
-aside li {
+#recent li {
   margin: var(--space-xs) 0;
 }
 
