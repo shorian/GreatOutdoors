@@ -63,7 +63,7 @@ body {
   font-family: var(--body-font)
 }
 
-div#wrapper {
+#wrapper {
   display: grid;
   grid-template-columns: minmax(auto, 250px) 1fr;
   grid-template-rows: 150px auto 4rem;
@@ -72,7 +72,7 @@ div#wrapper {
 
 /* Banner styles */
 
-header#banner {
+#banner {
   padding: var(--space-med);
   background-color: var(--color-moss);
   background-image: url("https://www.nps.gov/npgallery/GetAsset/9b948eb2-cffb-4783-bc8d-a952587d7f84/proxy/hires?");
@@ -85,7 +85,7 @@ header#banner {
   text-align: center;
 }
 
-header#banner > h1 {
+#banner > h1 {
   color: var(--color-andesite);
   font-size: 50px;
   text-shadow: 1px 0 var(--color-gold), -1px 0 var(--color-gold),
@@ -97,7 +97,7 @@ header#banner > h1 {
 
 /* Navbar styles */
 
-nav#sidebar {
+#navbar {
   grid-column: 1;
   grid-row: 1 / 3;
   position: sticky;
@@ -112,7 +112,7 @@ nav#sidebar {
 /* TODO: Figure out why the navbar stubbornly remains taller
 than viewport despite my best efforts. */
 
-img#logo {
+#logo {
   height: calc(150px - var(--space-med));
   border-radius: var(--corner-radius);
   display: block;
@@ -120,11 +120,11 @@ img#logo {
   padding-bottom: var(--space-xs);
 }
 
-nav#sidebar > ul {
+#navbar > ul {
   list-style-type: none;
 }
 
-nav#sidebar > ul > li {
+#navbar > ul > li {
   margin: var(--space-xs) 0;
   border-radius: var(--corner-radius);
 
@@ -134,26 +134,26 @@ nav#sidebar > ul > li {
   font-optical-sizing: auto;
 }
 
-nav#sidebar > ul > li:hover {
+#navbar > ul > li:hover {
   background-color: var(--color-moss);
   border: 1px solid var(--color-gold);
   transform: translate(15px, 5px);
 
 }
 
-nav#sidebar > ul > li > a {
+#navbar > ul > li > a {
   display: block;
   padding: 10px;
   text-decoration: none;
   color: var(--color-gold);
 }
 
-nav#sidebar > ul > li > a:hover {
+#navbar > ul > li > a:hover {
   text-decoration: none;
   color: var(--color-gold);
 }
 
-nav#sidebar > ul > li > a:active {
+#navbar > ul > li > a:active {
   text-decoration: none;
   color: var(--color-gold);
 }
@@ -244,7 +244,7 @@ header li, footer li {
 
 /* Site footer */
 
-footer#site-footer {
+#site-footer {
   grid-column: 2 / 3;
   max-width: 100%;
   background-color: var(--color-andesite-d1);
@@ -252,12 +252,12 @@ footer#site-footer {
   font-size: .9rem;
 }
 
-footer#site-footer li {
+#site-footer li {
   padding: 0 var(--space-lg);
   text-align: center;
 }
 
-footer#site-footer a {
+#site-footer a {
   color: var(--color-sandstone-d1);
 }
 

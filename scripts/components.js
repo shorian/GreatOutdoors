@@ -23,7 +23,7 @@ class NavBar extends HTMLElement {
     this.setAttribute("style", "display: contents;");
 
     this.innerHTML = `
-         <nav id="sidebar">
+         <nav id="navbar">
         <a href=""><img id="logo" src="images/logo.png" alt="Great Outdoors" /></a>
         <ul>
           <li>
