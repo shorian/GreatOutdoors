@@ -125,22 +125,25 @@ than viewport despite my best efforts. */
   height: calc(150px - var(--space-med));
   border-radius: var(--corner-radius);
   display: block;
-  margin: 0 auto;
-  padding-bottom: var(--space-xs);
+  margin: var(--space-xs) auto;
 }
 
 #navbar > ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-xs);
+  padding-top: var(--space-xs);
 }
 
 #navbar > ul > li {
-  margin: var(--space-xs) 0;
   border-radius: var(--corner-radius);
 
   background-color: var(--color-andesite);
 
   font-family: var(--heading-font);
   font-optical-sizing: auto;
+  flex: 1 0 auto;
 }
 
 #navbar > ul > li:hover {
