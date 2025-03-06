@@ -26,6 +26,7 @@
   --space-lg: 2.25rem;
 
   --corner-radius: 5px;
+  --corner-radius-lg: 10px;
 }
 
 * {
@@ -323,6 +324,57 @@ figure > img {
 figcaption {
   text-align: center;
   margin: var(--space-xs) 0;
+}
+
+main#destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-med);
+  align-items: stretch;
+}
+
+a.destination-card {
+  border: 2px solid var(--color-andesite);
+  border-radius: var(--corner-radius-lg);
+
+  background-color: var(--color-andesite);
+  color: var(--color-sandstone);
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--space-xs);
+  text-decoration: none;
+}
+
+a.destination-card > h2 {
+  color: var(--color-gold);
+  margin: var(--space-xs);
+
+  text-align: center;
+  font-weight: bold;
+}
+
+a.destination-card > img {
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+  flex-basis: 45%;
+}
+
+a.destination-card > p {
+  margin: var(--space-sm);
+}
+
+span.cont-reading {
+  text-align: right;
+  margin: 0 var(--space-sm) var(--space-xs) var(--space-sm);
+  color: var(--color-gold);
+  text-decoration: underline dotted;
+}
+
+a.destination-card:hover {
+  border-color: var(--color-gold);
+  background-color: var(--color-andesite-d1);
 }
 
 /* Utility Classes */
