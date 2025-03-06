@@ -26,6 +26,7 @@
   --space-lg: 2.25rem;
 
   --corner-radius: 5px;
+  --corner-radius-lg: 10px;
 }
 
 * {
@@ -337,4 +338,57 @@ figcaption {
 
 .fr {
   float: right;
+}
+
+main#destination-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-med);
+}
+
+div.destination-card {
+  border: 2px solid var(--color-andesite);
+  border-radius: var(--corner-radius-lg);
+
+  width: 100%;
+
+  background-color: var(--color-andesite);
+  color: var(--color-gold);
+
+  cursor: pointer;
+}
+
+div.destination-card > h2 {
+  margin: 0;
+
+  width: 100%;
+
+  background-color: var(--color-andesite);
+  color: var(--color-gold);
+
+  text-align: center;
+  font-weight: bold;
+}
+
+div.destination-card > img {
+  margin: 0;
+  border-radius: 0;
+
+  width: 100%;
+}
+
+div.destination-card > p {
+  margin: var(--space-sm);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.destination-card:hover {
+  border-color: var(--color-gold);
+  background-color: var(--color-moss);
+}
+
+div.destination-card:hover > h2 {
+  background-color: var(--color-moss);
 }
