@@ -385,6 +385,11 @@ div.destination-card > p {
   margin: var(--space-sm);
 }
 
+span.cont-reading {
+  text-align: right;
+  margin: 0 var(--space-sm) var(--space-xs) var(--space-sm);
+}
+
 div.destination-card:hover {
   border-color: var(--color-gold);
   background-color: var(--color-moss);
