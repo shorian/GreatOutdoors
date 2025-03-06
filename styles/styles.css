@@ -351,7 +351,7 @@ div.destination-card {
   border: 2px solid var(--color-andesite);
   border-radius: var(--corner-radius-lg);
 
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   width: 100%;
 
   background-color: var(--color-andesite);
@@ -359,8 +359,7 @@ div.destination-card {
 
   cursor: pointer;
 
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: flex;
 }
 
 div.destination-card > h2 {
