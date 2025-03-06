@@ -211,10 +211,6 @@ video {
   max-width: 100%;
 }
 
-img.destImg {
-  border-radius: 15px;
-}
-
 h1 {
   color: var(--color-andesite);
   font-family: var(--heading-font);
@@ -344,8 +340,6 @@ a.destination-card {
   background-color: var(--color-andesite);
   color: var(--color-sandstone);
 
-  cursor: pointer;
-
   display: flex;
   flex-direction: column;
   padding-bottom: var(--space-xs);
@@ -363,14 +357,12 @@ a.destination-card > h2 {
 a.destination-card > img {
   margin: 0;
   border-radius: 0;
-
-  width: 100%;
-  flex: 0 1 70%;
+  object-fit: cover;
+  flex-basis: 45%;
 }
 
 a.destination-card > p {
   margin: var(--space-sm);
-  flex: 1 1;
 }
 
 span.cont-reading {
