@@ -6,14 +6,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-    <script src="scripts/components/banner.js"></script>
+    <script src="scripts/components.js"></script>
     <title>Welcome to the Great Outdoors!</title>
   </head>
+
   <body>
     <div id="wrapper">
+<<<<<<< HEAD
       <nav id="sidebar">
         <center><a href="index.html"><img id="logo" src="images/logo.png" alt="Great Outdoors" /></a></center>
         <ul>
@@ -28,10 +29,13 @@
           </li>
         </ul>
       </nav>
+=======
+      <navbar-component></navbar-component>
+>>>>>>> main
       <banner-component></banner-component>
       <div class="content">
         <main>
-          <div class="entry">
+          <article>
             <header>
               <h2>Trip Report: trailname</h2>
               <dl class="trail-stats">
@@ -44,8 +48,8 @@
                   <dd>location</dd>
                 </div>
                 <div>
-                    <dt>Passes Required</dt>
-                    <dd>passes</dd>
+                  <dt>Passes Required</dt>
+                  <dd>passes</dd>
                 </div>
                 <div>
                   <dt>Elevation Gain</dt>
@@ -58,8 +62,8 @@
               </dl>
             </header>
             <p>
-                <b>Notable features:</b>
-                Trees, etc.
+              <b>Notable features:</b>
+              Trees, etc.
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -68,17 +72,15 @@
               suscipit! Adipisci itaque debitis blanditiis.
             </p>
             <p>
-                Suspendisse porttitor neque ac quam semper, ut suscipit justo
-                tempor. Ut consequat tincidunt urna ac vulputate. In ut
-                scelerisque augue. Quisque vitae cursus ligula. Maecenas eget
-                mattis dolor. Pellentesque gravida et erat ac efficitur. Aliquam
-                enim nibh, viverra nec eleifend eu, luctus at augue.
+              Suspendisse porttitor neque ac quam semper, ut suscipit justo
+              tempor. Ut consequat tincidunt urna ac vulputate. In ut
+              scelerisque augue. Quisque vitae cursus ligula. Maecenas eget
+              mattis dolor. Pellentesque gravida et erat ac efficitur. Aliquam
+              enim nibh, viverra nec eleifend eu, luctus at augue.
             </p>
             <figure class="fr">
               <img src="images/waterfall.jpg" alt="Ranger Falls" />
-              <figcaption>
-                Flavor text here!
-              </figcaption>
+              <figcaption>Flavor text here!</figcaption>
             </figure>
             <p>
               Donec eu ornare eros. Nulla non turpis eget dui dapibus elementum
@@ -102,18 +104,38 @@
               sodales ex hendrerit in. Aliquam erat volutpat. Ut hendrerit enim
               lectus, lacinia malesuada felis mollis non.
             </p>
+<<<<<<< HEAD
             <p><b>Specific Directions:</b></p>
             <p><a href=""><b>More about my experience here!</b></a></p>
+=======
+            <iframe
+              width="600"
+              height="450"
+              style="border: 0"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA">
+            </iframe>
+            <p>
+              <a href=""><b>More about my experience here!</b></a>
+            </p>
+>>>>>>> main
             <footer class="entry">
               <ul>
                 <li>February 13, 2025</li>
                 <li><a href="">7 Comments</a></li>
               </ul>
             </footer>
-          </div>
+          </article>
         </main>
         <aside>
+<<<<<<< HEAD
           <iframe src="recentUpdates.html" style="border:0" seamless height="400"></iframe>
+=======
+          <iframe src="recentUpdates.html" seamless scrolling="" no"
+          height="400">
+>>>>>>> main
         </aside>
       </div>
       <footer id="site-footer">
