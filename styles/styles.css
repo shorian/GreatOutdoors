@@ -177,7 +177,7 @@ div.content {
   margin: 0 var(--space-med);
   display: grid;
   grid-template-columns: 3fr 1fr;
-  column-gap: var(--space-med);
+  gap: var(--space-med);
   align-content: start;
 }
 

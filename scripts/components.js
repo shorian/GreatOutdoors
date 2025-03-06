@@ -50,7 +50,6 @@ class RecentPosts extends HTMLElement {
   }
 
   connectedCallback() {
-    this.setAttribute("style", "display: contents;");
 
     this.innerHTML = `
     <nav id="recent" class="cell">
@@ -66,6 +65,28 @@ class RecentPosts extends HTMLElement {
   }
 }
 
+class Comments extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+
+    this.innerHTML = `
+    <section class="cell">
+    <h3>Comments</h3>
+        <div
+          id="convocomet-widget"
+          data-page="falls"
+          data-site="71937473052531"
+          data-theme="light"
+        ></div>
+      </section>
+      `;
+  }
+}
+
 customElements.define("banner-component", Banner);
 customElements.define("navbar-component", NavBar);
 customElements.define("recent-posts", RecentPosts);
+customElements.define("comments-component", Comments);
