@@ -344,18 +344,23 @@ main#destination-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: var(--space-med);
+  align-items: stretch;
 }
 
 div.destination-card {
   border: 2px solid var(--color-andesite);
   border-radius: var(--corner-radius-lg);
 
+  aspect-ratio: 1 / 1;
   width: 100%;
 
   background-color: var(--color-andesite);
   color: var(--color-gold);
 
   cursor: pointer;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 div.destination-card > h2 {
@@ -379,9 +384,6 @@ div.destination-card > img {
 
 div.destination-card > p {
   margin: var(--space-sm);
-
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 div.destination-card:hover {
