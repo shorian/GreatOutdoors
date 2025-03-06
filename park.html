@@ -6,34 +6,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-    <!-- <script src="scripts/myscripts.js"></script> -->
+    <script src="scripts/components.js"></script>
     <title>Welcome to the Great Outdoors!</title>
   </head>
+
   <body>
     <div id="wrapper">
-      <nav id="sidebar">
-        <center><a href="index.html"><img id="logo" src="images/logo.png" alt="Great Outdoors" /></a></center>
-        <ul>
-          <li onclick="location.href="./index.html';">
-            <a href="index.html">Great Outdoors</a>
-          </li>
-          <li onclick="location.href='./destinationPage.html';">
-            <a href="destinationPage.html">Destinations</a>
-          </li>
-          <li onclick="location.href='./index.html';">
-            <a href="index.html">Blog</a>
-          </li>
-        </ul>
-      </nav>
-      <header id="banner">
-        <h1>The Great Outdoors: A Poul Nichols Experience</h1>
-      </header>
+      <navbar-component></navbar-component>
+      <banner-component></banner-component>
       <div class="content">
-        <main>
-          <div class="entry">
+        <main class="cell">
+          <article>
             <header>
               <h2>Trip Report: Park Park</h2>
               <dl class="trail-stats">
@@ -46,8 +31,8 @@
                   <dd>Washington State</dd>
                 </div>
                 <div>
-                    <dt>Passes Required</dt>
-                    <dd>None</dd>
+                  <dt>Passes Required</dt>
+                  <dd>None</dd>
                 </div>
                 <div>
                   <dt>Elevation Gain</dt>
@@ -60,8 +45,8 @@
               </dl>
             </header>
             <p>
-                <b>Notable features:</b>
-                I saw a deer!
+              <b>Notable features:</b>
+              I saw a deer!
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -70,17 +55,15 @@
               suscipit! Adipisci itaque debitis blanditiis.
             </p>
             <p>
-                Suspendisse porttitor neque ac quam semper, ut suscipit justo
-                tempor. Ut consequat tincidunt urna ac vulputate. In ut
-                scelerisque augue. Quisque vitae cursus ligula. Maecenas eget
-                mattis dolor. Pellentesque gravida et erat ac efficitur. Aliquam
-                enim nibh, viverra nec eleifend eu, luctus at augue.
+              Suspendisse porttitor neque ac quam semper, ut suscipit justo
+              tempor. Ut consequat tincidunt urna ac vulputate. In ut
+              scelerisque augue. Quisque vitae cursus ligula. Maecenas eget
+              mattis dolor. Pellentesque gravida et erat ac efficitur. Aliquam
+              enim nibh, viverra nec eleifend eu, luctus at augue.
             </p>
             <figure class="fr">
               <img src="images/park.jpg" alt="park" />
-              <figcaption>
-                I enjoy parks!
-              </figcaption>
+              <figcaption>I enjoy parks!</figcaption>
             </figure>
             <p>
               Donec eu ornare eros. Nulla non turpis eget dui dapibus elementum
@@ -111,11 +94,9 @@
                 <li><a href="">7 Comments</a></li>
               </ul>
             </footer>
-          </div>
+          </article>
         </main>
-        <aside>
-          <iframe src="recentUpdates.html" style="border:0" seamless height="400"></iframe>
-        </aside>
+        <recent-posts></recent-posts>
       </div>
       <footer id="site-footer">
         <ul>
