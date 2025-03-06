@@ -337,7 +337,7 @@ main#destination-grid {
   align-items: stretch;
 }
 
-div.destination-card {
+a.destination-card {
   border: 2px solid var(--color-andesite);
   border-radius: var(--corner-radius-lg);
 
@@ -349,9 +349,10 @@ div.destination-card {
   display: flex;
   flex-direction: column;
   padding-bottom: var(--space-xs);
+  text-decoration: none;
 }
 
-div.destination-card > h2 {
+a.destination-card > h2 {
   color: var(--color-gold);
   margin: var(--space-xs);
 
@@ -359,7 +360,7 @@ div.destination-card > h2 {
   font-weight: bold;
 }
 
-div.destination-card > img {
+a.destination-card > img {
   margin: 0;
   border-radius: 0;
 
@@ -367,7 +368,7 @@ div.destination-card > img {
   flex: 0 1 70%;
 }
 
-div.destination-card > p {
+a.destination-card > p {
   margin: var(--space-sm);
   flex: 1 1;
 }
@@ -375,13 +376,11 @@ div.destination-card > p {
 span.cont-reading {
   text-align: right;
   margin: 0 var(--space-sm) var(--space-xs) var(--space-sm);
-}
-
-div.destination-card a {
   color: var(--color-gold);
+  text-decoration: underline dotted;
 }
 
-div.destination-card:hover {
+a.destination-card:hover {
   border-color: var(--color-gold);
   background-color: var(--color-andesite-d1);
 }
