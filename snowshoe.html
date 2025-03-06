@@ -9,25 +9,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-    <script src="scripts/components/banner.js"></script>
+    <script src="scripts/components.js"></script>
     <title>Welcome to the Great Outdoors!</title>
   </head>
   <body>
     <div id="wrapper">
-      <nav id="sidebar">
-        <img id="logo" src="images/logo.png" alt="Great Outdoors" />
-        <ul>
-          <li onclick="location.href="./index.html';">
-            <a href="index.html">Great Outdoors</a>
-          </li>
-          <li onclick="location.href='./destinationPage.html';">
-            <a href="destinationPage.html">Destinations</a>
-          </li>
-          <li onclick="location.href='./blogHome.html';">
-            <a href="blogHome.html">Blog</a>
-          </li>
-        </ul>
-      </nav>
+      <navbar-component></navbar-component>
       <banner-component></banner-component>
       <div class="content">
         <main>
@@ -77,9 +64,7 @@
             </footer>
           </div>
         </main>
-        <aside id="recent">
-          <iframe src="recentUpdates.html" style="border:0" seamless height="400"></iframe>
-        </aside>
+        <recent-posts></recent-posts>
       </div>
       <footer id="site-footer">
         <ul>
