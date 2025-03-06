@@ -342,7 +342,7 @@ div.destination-card {
   border-radius: var(--corner-radius-lg);
 
   background-color: var(--color-andesite);
-  color: var(--color-gold);
+  color: var(--color-sandstone);
 
   cursor: pointer;
 
@@ -383,7 +383,7 @@ div.destination-card a {
 
 div.destination-card:hover {
   border-color: var(--color-gold);
-  background-color: var(--color-moss);
+  background-color: var(--color-andesite-d1);
 }
 
 /* Utility Classes */
