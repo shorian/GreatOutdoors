@@ -134,16 +134,6 @@ a:active {
 
 /* Part of Mangled Changes; moved here during the commit after 9f1c8fe */
 
-/* Recent Posts */
-
-#recent > ul {
-  list-style-type: none;
-}
-
-#recent li {
-  margin: var(--space-xs) 0;
-}
-
 /* Header + Footer defaults */
 
 header > ul,
@@ -158,6 +148,16 @@ footer > ul {
 header li,
 footer li {
   list-style-type: none;
+}
+
+/* Recent Posts */
+
+#recent > ul {
+  list-style-type: none;
+}
+
+#recent li {
+  margin: var(--space-xs) 0;
 }
 
 /* Site footer */
