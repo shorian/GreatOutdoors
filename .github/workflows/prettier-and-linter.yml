@@ -1,7 +1,7 @@
 ---
 name: Prettier and Linter
 
-on: [push, pull_request]
+on: push
 
 permissions:
   contents: write
