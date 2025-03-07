@@ -1,28 +1,28 @@
 class Banner extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    this.setAttribute("style", "display: contents;");
+    connectedCallback() {
+        this.setAttribute("style", "display: contents;");
 
-    this.innerHTML = `
+        this.innerHTML = `
         <header id="banner">
           <h1>The Great Outdoors: A Poul Nichols Experience</h1>
       </header>
       `;
-  }
+    }
 }
 
 class NavBar extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    this.setAttribute("style", "display: contents;");
+    connectedCallback() {
+        this.setAttribute("style", "display: contents;");
 
-    this.innerHTML = `
+        this.innerHTML = `
          <nav id="navbar">
         <a href=""><img id="logo" src="images/logo.png" alt="Great Outdoors" /></a>
         <ul>
@@ -41,18 +41,18 @@ class NavBar extends HTMLElement {
         </ul>
       </nav>
       `;
-  }
+    }
 }
 
 class RecentPosts extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    this.setAttribute("style", "display: contents;");
+    connectedCallback() {
+        this.setAttribute("style", "display: contents;");
 
-    this.innerHTML = `
+        this.innerHTML = `
     <nav id="recent" class="cell">
             <h3>Recent Posts</h3>
     <ul>
@@ -63,7 +63,7 @@ class RecentPosts extends HTMLElement {
     </ul>
     </nav>
       `;
-  }
+    }
 }
 
 customElements.define("banner-component", Banner);
