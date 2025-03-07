@@ -11,16 +11,16 @@ jobs:
   prettier-and-linter:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: "Checkout"
         uses: actions/checkout@v4
 
-      - name: Prettier
+      - name: "Prettier: Code Format"
         uses: creyD/prettier_action@v4.3
         with:
           prettier_options: --write **/*.{html,css,js}
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Lint
+      - name: "Super-Linter: Code Analysis"
         uses: super-linter/super-linter@v7.3.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
