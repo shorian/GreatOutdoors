@@ -17,7 +17,7 @@ jobs:
       - name: "Prettier: Code Format"
         uses: creyD/prettier_action@v4.3
         with:
-          prettier_options: --write **/*.{html,css,js}
+          prettier_options: --write **/*.{html,css,js}  --config .prettierrc
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: "Super-Linter: Code Analysis"
