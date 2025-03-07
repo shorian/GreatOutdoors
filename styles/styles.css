@@ -27,6 +27,9 @@
 
   --corner-radius: 5px;
   --corner-radius-lg: 10px;
+
+  /* Border */
+  --article-border: 1px solid var(--color-sandstone-d1);
 }
 
 * {
@@ -205,11 +208,20 @@ h3 {
   font-weight: 600;
 }
 
-article.blogBlurb {
+.blogBlurb {
   background-color: var(--color-sandstone-l2);
   border-radius: var(--corner-radius-lg);
-  padding: var(--space-sm);
-  margin: var(--space-med) var(--space-sm);
+  padding: var(--space-sm) var(--space-med) var(--space-med) var(--space-med);
+  margin: var(--space-med) 0 var(--space-sm);
+}
+
+.blogBlurb > header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blogBlurb > p.cont-reading {
+  margin-top: 0;
 }
 
 img,
@@ -304,12 +316,12 @@ dl.trail-stats dt::after {
   content: ":";
 }
 
-div.entry > p {
+article > p {
   margin: 1rem;
 }
 
-footer.entry {
-  border-top: 1px solid var(--color-sandstone-d1);
+.cell footer {
+  border-top: var(--article-border);
   padding: 1rem 1rem 0 1rem;
 }
 
