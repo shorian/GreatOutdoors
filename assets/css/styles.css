@@ -1,0 +1,401 @@
+:root {
+  /* Base colors */
+  --color-sandstone: #ded2bd;
+  --color-gold: #e3a53b;
+  --color-andesite: #403237;
+  --color-moss: #526338;
+  --color-blue: #6bbfd6;
+
+  /* Shades */
+  --color-sandstone-l1: #eae3d6;
+  --color-sandstone-l2: #f8f6f2;
+  --color-sandstone-d1: #cfbea0;
+  --color-sandstone-d2: #c8b592;
+  --color-andesite-d1: #2e2427;
+  --color-moss-d1: #414e2c;
+
+  /* Fonts */
+  --heading-font: "Montserrat", "Georgia", "Palatino", "Times", serif;
+  --body-font: "Source Sans Pro", "Open Sans", "Helvetica", "Arial", sans-serif;
+
+  /* Spacers */
+  --space-xs: 0.375rem;
+  --space-sm: 0.75rem;
+  --space-med: 1.5rem;
+  --space-lg: 2.25rem;
+
+  /* Corner Radius */
+  --corner-radius: 5px;
+  --corner-radius-lg: 10px;
+
+  /* Border */
+  --article-border: 1px solid var(--color-sandstone-d1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Reset */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  min-height: 100vh;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  line-height: 1.4;
+}
+
+body {
+  background-color: var(--color-sandstone);
+  color: var(--color-andesite);
+  font-family: var(--body-font);
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Default Styles */
+
+/* Default Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  margin: var(--space-sm);
+  color: var(--color-andesite);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+ul,
+ol,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: var(--space-sm);
+}
+
+/* Default Links */
+
+a {
+  color: var(--color-moss);
+  text-decoration: underline dotted;
+}
+
+a:hover {
+  color: var(--color-moss-d1);
+}
+
+a:active {
+  color: var(--color-andesite);
+}
+
+/* Default Figures */
+
+figure {
+  border: var(--article-border);
+  border-radius: var(--corner-radius);
+  background-color: var(--color-sandstone-l2);
+  font-size: 0.9rem;
+  padding: var(--space-xs);
+  width: 40%;
+}
+
+figcaption {
+  text-align: center;
+  margin: var(--space-xs) 0;
+}
+
+/* Default Headers + Footers */
+
+header > ul,
+footer > ul {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header li,
+footer li {
+  list-style-type: none;
+}
+
+/* Global Components */
+
+/* Components - Banner */
+
+#banner {
+  padding: var(--space-med);
+  background-color: var(--color-moss);
+  background-image: url("https://www.nps.gov/npgallery/GetAsset/9b948eb2-cffb-4783-bc8d-a952587d7f84/proxy/hires?");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#banner > h1 {
+  font-size: 50px;
+  text-shadow:
+    1px 0 var(--color-gold),
+    -1px 0 var(--color-gold),
+    0 1px var(--color-gold),
+    0 -1px var(--color-gold);
+  margin: 0;
+}
+
+/* Components - Navbar */
+
+#navbar {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: var(--color-andesite-d1);
+  font-size: 1.3rem;
+  padding: var(--space-xs);
+}
+
+#logo {
+  height: calc(150px - var(--space-med));
+  border-radius: var(--corner-radius);
+  display: block;
+  margin: var(--space-xs) auto;
+}
+
+#navbar > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-xs);
+  padding-top: var(--space-xs);
+
+  > li {
+    border-radius: var(--corner-radius);
+    background-color: var(--color-andesite);
+    font-family: var(--heading-font);
+    font-optical-sizing: auto;
+    flex: 1 0 auto;
+
+    > a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: var(--color-gold);
+
+      &:hover {
+        border-radius: var(--corner-radius);
+        background-color: var(--color-moss);
+        color: var(--color-gold);
+        border: 1px solid var(--color-gold);
+        transform: translate(15px, 5px);
+      }
+    }
+  }
+}
+
+/* Components - Site Footer */
+
+#site-footer {
+  grid-column: 2 / 3;
+  background-color: var(--color-andesite-d1);
+  color: var(--color-sandstone-l1);
+  font-size: 0.9rem;
+
+  li {
+    padding: 0 var(--space-lg);
+    text-align: center;
+  }
+
+  a {
+    color: var(--color-sandstone-d1);
+  }
+}
+
+/* Components - Recent Posts */
+
+#recent > ul {
+  list-style-type: none;
+
+  > li {
+    margin: var(--space-xs) 0;
+  }
+}
+
+#recent h3 {
+  margin-left: 0;
+  margin-top: var(--space-med);
+}
+
+/* Containers */
+
+#wrapper {
+  display: grid;
+  grid-template-columns: minmax(auto, 250px) 1fr;
+  grid-template-rows: 150px auto 4rem;
+  row-gap: var(--space-med);
+}
+
+/* Content Grid */
+
+div.content {
+  margin: 0 var(--space-med);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: var(--space-med);
+  align-content: start;
+}
+
+/* Content Grid cells */
+
+.cell {
+  background-color: var(--color-sandstone-l1);
+  padding: var(--space-sm) var(--space-lg) var(--space-med);
+  border-radius: var(--corner-radius);
+}
+
+.cell header {
+  border-bottom: var(--article-border);
+}
+
+.cell footer {
+  border-top: var(--article-border);
+  padding: var(--space-sm) var(--space-sm) 0;
+}
+
+/* Blog Blurbs */
+
+.blog-blurb {
+  background-color: var(--color-sandstone-l2);
+  border-radius: var(--corner-radius-lg);
+  padding: var(--space-sm) var(--space-med) var(--space-med) var(--space-med);
+  margin: var(--space-med) 0 var(--space-sm);
+
+  > header a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  h3 {
+    margin-bottom: var(--space-xs);
+  }
+
+  .cont-reading {
+    margin-top: 0;
+  }
+}
+
+/* Destination Grid */
+
+#destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: var(--space-lg);
+  gap: var(--space-med);
+  align-items: stretch;
+}
+
+/* Destination Cards */
+
+a.destination-card {
+  border: 2px solid var(--color-andesite);
+  border-radius: var(--corner-radius-lg);
+  background-color: var(--color-andesite);
+  color: var(--color-sandstone);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--space-xs);
+  text-decoration: none;
+
+  &:hover {
+    border-color: var(--color-gold);
+    background-color: var(--color-andesite-d1);
+  }
+
+  > h2 {
+    color: var(--color-gold);
+    margin: var(--space-xs);
+    text-align: center;
+    font-weight: bold;
+  }
+
+  > img {
+    margin: 0;
+    border-radius: 0;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+  }
+
+  p {
+    margin: var(--space-sm);
+  }
+}
+
+span.cont-reading {
+  text-align: right;
+  margin: 0 var(--space-sm) var(--space-xs) var(--space-sm);
+  color: var(--color-gold);
+  text-decoration: underline dotted;
+}
+
+/* Destination Trail Stats */
+
+dl.trail-stats {
+  border-top: var(--article-border);
+  padding: var(--space-xs) var(--space-sm);
+  color: var(--color-andesite);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+dl.trail-stats dt {
+  font-weight: bold;
+}
+
+dl.trail-stats dt::after {
+  content: ":";
+}
+
+/* Utility Classes */
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}

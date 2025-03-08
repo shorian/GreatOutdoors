@@ -1,0 +1,12 @@
+title: Great Outdoors
+description: >
+    Poul Nichols' Great Outdoors is a travel blog featuring parks, trails, and
+    other outdoor destinations throughout the Pacific Northwest.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://shorian.githubpages.io/GreatOutdoors"
+
+exclude:
+  - README.md
+  - TeamCharter.md
+  - LICENSE
+  - template.html

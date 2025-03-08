@@ -28,3 +28,4 @@ jobs:
           VALIDATE_CSS: true
           VALIDATE_HTML: true
           VALIDATE_JAVASCRIPT_ES: true
+          CSS_FILE_NAME: .stylelintrc.yml
