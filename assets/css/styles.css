@@ -119,7 +119,7 @@ a:active {
 /* Default Figures */
 
 figure {
-  border: 1px solid var(--color-sandstone);
+  border: var(--article-border);
   border-radius: var(--corner-radius);
   background-color: var(--color-sandstone-l2);
   font-size: 0.9rem;
@@ -167,11 +167,8 @@ footer li {
 
 #banner > h1 {
   font-size: 50px;
-  text-shadow:
-    1px 0 var(--color-gold),
-    -1px 0 var(--color-gold),
-    0 1px var(--color-gold),
-    0 -1px var(--color-gold);
+  text-shadow: 1px 0 var(--color-gold), -1px 0 var(--color-gold),
+    0 1px var(--color-gold), 0 -1px var(--color-gold);
   margin: 0;
 }
 
@@ -204,7 +201,7 @@ footer li {
   padding-top: var(--space-xs);
 }
 
-#navbar > ul > li {
+#navbar li {
   border-radius: var(--corner-radius);
   background-color: var(--color-andesite);
   font-family: var(--heading-font);
@@ -212,25 +209,25 @@ footer li {
   flex: 1 0 auto;
 }
 
-#navbar > ul > li:hover {
+#navbar li:hover {
   background-color: var(--color-moss);
   border: 1px solid var(--color-gold);
   transform: translate(15px, 5px);
 }
 
-#navbar > ul > li > a {
+#navbar a {
   display: block;
   padding: 10px;
   text-decoration: none;
   color: var(--color-gold);
 }
 
-#navbar > ul > li > a:hover {
+#navbar a:hover {
   text-decoration: none;
   color: var(--color-gold);
 }
 
-#navbar > ul > li > a:active {
+#navbar a:active {
   text-decoration: none;
   color: var(--color-gold);
 }
@@ -263,7 +260,7 @@ footer li {
   margin: var(--space-xs) 0;
 }
 
-#recent > h3 {
+#recent h3 {
   margin-left: 0;
   margin-top: var(--space-med);
 }
@@ -306,23 +303,23 @@ div.content {
 
 /* Blog Blurbs */
 
-.blogBlurb {
+.blog-blurb {
   background-color: var(--color-sandstone-l2);
   border-radius: var(--corner-radius-lg);
   padding: var(--space-sm) var(--space-med) var(--space-med) var(--space-med);
   margin: var(--space-med) 0 var(--space-sm);
 }
 
-.blogBlurb > header a {
+.blog-blurb > header a {
   font-weight: bold;
   text-decoration: none;
 }
 
-.blogBlurb h3 {
+.blog-blurb h3 {
   margin-bottom: var(--space-xs);
 }
 
-.blogBlurb > p.cont-reading {
+.blog-blurb > p.cont-reading {
   margin-top: 0;
 }
 
