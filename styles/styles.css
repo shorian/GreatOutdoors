@@ -10,14 +10,12 @@
   --color-sandstone-l1: #eae3d6;
   --color-sandstone-l2: #f8f6f2;
   --color-sandstone-d1: #c8b592;
-
   --color-andesite-d1: #2e2427;
-
   --color-moss-d1: #414e2c;
 
   /* Fonts */
-  --heading-font: "Montserrat", Georgia, Palatino, Times, serif;
-  --body-font: "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif;
+  --heading-font: "Montserrat", "Georgia", "Palatino", "Times", serif;
+  --body-font: "Source Sans Pro", "Open Sans", "Helvetica", "Arial", sans-serif;
 
   /* Spacers */
   --space-xs: 0.375rem;
@@ -25,11 +23,9 @@
   --space-med: 1.5rem;
   --space-lg: 2.25rem;
 
+  /* Corner Radius */
   --corner-radius: 5px;
   --corner-radius-lg: 10px;
-
-  /* Border */
-  --article-border: 1px solid var(--color-sandstone-d1);
 }
 
 * {
@@ -76,6 +72,31 @@ body {
   font-family: var(--body-font);
 }
 
+/* Mangled Changes; moved here during the commit after 9f1c8fe */
+
+h1 {
+  color: var(--color-andesite);
+  font-family: var(--heading-font);
+  font-optical-sizing: auto;
+}
+
+/* Links */
+
+a {
+  color: var(--color-moss);
+  text-decoration: underline dotted;
+}
+
+a:hover {
+  color: var(--color-moss-d1);
+}
+
+a:active {
+  color: var(--color-andesite);
+}
+
+/* End of Mangled Changes */
+
 #wrapper {
   display: grid;
   grid-template-columns: minmax(auto, 250px) 1fr;
@@ -101,12 +122,64 @@ body {
 #banner > h1 {
   color: var(--color-andesite);
   font-size: 50px;
-  text-shadow: 1px 0 var(--color-gold), -1px 0 var(--color-gold),
-    0 1px var(--color-gold), 0 -1px var(--color-gold);
+  text-shadow:
+    1px 0 var(--color-gold),
+    -1px 0 var(--color-gold),
+    0 1px var(--color-gold),
+    0 -1px var(--color-gold);
   margin: 0;
 }
 
 /* End banner styles */
+
+/* Part of Mangled Changes; moved here during the commit after 9f1c8fe */
+
+/* Header + Footer defaults */
+
+header > ul,
+footer > ul {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header li,
+footer li {
+  list-style-type: none;
+}
+
+/* Recent Posts */
+
+#recent > ul {
+  list-style-type: none;
+}
+
+#recent li {
+  margin: var(--space-xs) 0;
+}
+
+/* Site footer */
+
+#site-footer {
+  grid-column: 2 / 3;
+  max-width: 100%;
+  background-color: var(--color-andesite-d1);
+  color: var(--color-sandstone-l1);
+  font-size: 0.9rem;
+}
+
+#site-footer li {
+  padding: 0 var(--space-lg);
+  text-align: center;
+}
+
+#site-footer a {
+  color: var(--color-sandstone-d1);
+}
+
+/* End of Mangled Changes */
 
 /* Navbar styles */
 
@@ -142,9 +215,7 @@ than viewport despite my best efforts. */
 
 #navbar > ul > li {
   border-radius: var(--corner-radius);
-
   background-color: var(--color-andesite);
-
   font-family: var(--heading-font);
   font-optical-sizing: auto;
   flex: 1 0 auto;
@@ -208,92 +279,10 @@ h3 {
   font-weight: 600;
 }
 
-.blogBlurb {
-  background-color: var(--color-sandstone-l2);
-  border-radius: var(--corner-radius-lg);
-  padding: var(--space-sm) var(--space-med) var(--space-med) var(--space-med);
-  margin: var(--space-med) 0 var(--space-sm);
-}
-
-.blogBlurb > header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.blogBlurb > p.cont-reading {
-  margin-top: 0;
-}
-
 img,
 video {
   height: auto;
   max-width: 100%;
-}
-
-h1 {
-  color: var(--color-andesite);
-  font-family: var(--heading-font);
-  font-optical-sizing: auto;
-}
-
-/* Links */
-
-a {
-  color: var(--color-moss);
-  text-decoration: underline dotted;
-}
-
-a:hover {
-  color: var(--color-moss-d1);
-}
-
-a:active {
-  color: var(--color-andesite);
-}
-
-/* Recent Posts */
-
-#recent > ul {
-  list-style-type: none;
-}
-
-#recent li {
-  margin: var(--space-xs) 0;
-}
-
-/* Header + Footer defaults */
-
-header > ul,
-footer > ul {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header li,
-footer li {
-  list-style-type: none;
-}
-
-/* Site footer */
-
-#site-footer {
-  grid-column: 2 / 3;
-  max-width: 100%;
-  background-color: var(--color-andesite-d1);
-  color: var(--color-sandstone-l1);
-  font-size: 0.9rem;
-}
-
-#site-footer li {
-  padding: 0 var(--space-lg);
-  text-align: center;
-}
-
-#site-footer a {
-  color: var(--color-sandstone-d1);
 }
 
 /* Entry Styles */
@@ -316,13 +305,13 @@ dl.trail-stats dt::after {
   content: ":";
 }
 
-article > p {
+div.entry > p {
   margin: 1rem;
 }
 
-.cell footer {
-  border-top: var(--article-border);
-  padding: 1rem 1rem 0 1rem;
+footer.entry {
+  border-top: 1px solid var(--color-sandstone-d1);
+  padding: 1rem 1rem 0; /* 1rem 1rem 0 1rem, changed to satisfy linter */
 }
 
 /* Figure styles */
@@ -355,10 +344,8 @@ main#destination-grid {
 a.destination-card {
   border: 2px solid var(--color-andesite);
   border-radius: var(--corner-radius-lg);
-
   background-color: var(--color-andesite);
   color: var(--color-sandstone);
-
   display: flex;
   flex-direction: column;
   padding-bottom: var(--space-xs);
@@ -368,7 +355,6 @@ a.destination-card {
 a.destination-card > h2 {
   color: var(--color-gold);
   margin: var(--space-xs);
-
   text-align: center;
   font-weight: bold;
 }

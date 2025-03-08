@@ -1,0 +1,30 @@
+---
+name: Prettier and Linter
+
+on: push
+
+permissions:
+  contents: write
+  statuses: write
+
+jobs:
+  prettier-and-linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v4
+
+      - name: "Prettier: Code Format"
+        uses: creyD/prettier_action@v4.3
+        with:
+          prettier_options: --write **/*.{html,css,js}  --config .prettierrc.yaml
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "Super-Linter: Code Analysis"
+        uses: super-linter/super-linter@v7.3.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BRANCH: ${{ github.ref }}
+          VALIDATE_CSS: true
+          VALIDATE_HTML: true
+          VALIDATE_JAVASCRIPT_ES: true
