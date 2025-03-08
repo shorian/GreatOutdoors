@@ -199,37 +199,28 @@ footer li {
   flex-direction: column;
   row-gap: var(--space-xs);
   padding-top: var(--space-xs);
-}
 
-#navbar li {
-  border-radius: var(--corner-radius);
-  background-color: var(--color-andesite);
-  font-family: var(--heading-font);
-  font-optical-sizing: auto;
-  flex: 1 0 auto;
-}
+  > li {
+    border-radius: var(--corner-radius);
+    background-color: var(--color-andesite);
+    font-family: var(--heading-font);
+    font-optical-sizing: auto;
+    flex: 1 0 auto;
 
-#navbar li:hover {
-  background-color: var(--color-moss);
-  border: 1px solid var(--color-gold);
-  transform: translate(15px, 5px);
-}
+    > a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: var(--color-gold);
 
-#navbar a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: var(--color-gold);
-}
-
-#navbar a:hover {
-  text-decoration: none;
-  color: var(--color-gold);
-}
-
-#navbar a:active {
-  text-decoration: none;
-  color: var(--color-gold);
+      &:hover {
+        background-color: var(--color-moss);
+        color: var(--color-gold);
+        border: 1px solid var(--color-gold);
+        transform: translate(15px, 5px);
+      }
+    }
+  }
 }
 
 /* Components - Site Footer */
@@ -239,25 +230,25 @@ footer li {
   background-color: var(--color-andesite-d1);
   color: var(--color-sandstone-l1);
   font-size: 0.9rem;
-}
 
-#site-footer li {
-  padding: 0 var(--space-lg);
-  text-align: center;
-}
+  li {
+   padding: 0 var(--space-lg);
+   text-align: center;
+  }
 
-#site-footer a {
-  color: var(--color-sandstone-d1);
+  a {
+    color: var(--color-sandstone-d1);
+  }
 }
 
 /* Components - Recent Posts */
 
 #recent > ul {
   list-style-type: none;
-}
 
-#recent li {
-  margin: var(--space-xs) 0;
+  > li {
+    margin: var(--space-xs) 0;
+  }
 }
 
 #recent h3 {
@@ -308,19 +299,19 @@ div.content {
   border-radius: var(--corner-radius-lg);
   padding: var(--space-sm) var(--space-med) var(--space-med) var(--space-med);
   margin: var(--space-med) 0 var(--space-sm);
-}
 
-.blog-blurb > header a {
-  font-weight: bold;
-  text-decoration: none;
-}
+  > header a {
+    font-weight: bold;
+    text-decoration: none;
+  }
 
-.blog-blurb h3 {
-  margin-bottom: var(--space-xs);
-}
+  h3 {
+    margin-bottom: var(--space-xs);
+  }
 
-.blog-blurb > p.cont-reading {
-  margin-top: 0;
+  .cont-reading {
+    margin-top: 0;
+  }
 }
 
 /* Destination Grid */
@@ -344,24 +335,29 @@ a.destination-card {
   flex-direction: column;
   padding-bottom: var(--space-xs);
   text-decoration: none;
-}
 
-a.destination-card > h2 {
-  color: var(--color-gold);
-  margin: var(--space-xs);
-  text-align: center;
-  font-weight: bold;
-}
+  &:hover {
+    border-color: var(--color-gold);
+    background-color: var(--color-andesite-d1);
+  }
 
-a.destination-card > img {
-  margin: 0;
-  border-radius: 0;
-  object-fit: cover;
-  aspect-ratio: 4 / 3;
-}
+  > h2 {
+    color: var(--color-gold);
+    margin: var(--space-xs);
+    text-align: center;
+    font-weight: bold;
+  }
 
-a.destination-card > p {
-  margin: var(--space-sm);
+  > img {
+    margin: 0;
+    border-radius: 0;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+  }
+
+  p {
+    margin: var(--space-sm);
+  }
 }
 
 span.cont-reading {
@@ -369,11 +365,6 @@ span.cont-reading {
   margin: 0 var(--space-sm) var(--space-xs) var(--space-sm);
   color: var(--color-gold);
   text-decoration: underline dotted;
-}
-
-a.destination-card:hover {
-  border-color: var(--color-gold);
-  background-color: var(--color-andesite-d1);
 }
 
 /* Destination Trail Stats */
