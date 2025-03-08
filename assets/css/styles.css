@@ -57,7 +57,15 @@ body {
   font-family: var(--body-font);
 }
 
-/* Default headings */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Default Styles */
+
+/* Default Headings */
 
 h1,
 h2,
@@ -66,7 +74,7 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font);
-  margin: var(--space-sm); 
+  margin: var(--space-sm);
   color: var(--color-andesite);
 }
 
@@ -93,11 +101,7 @@ p {
   margin: var(--space-sm);
 }
 
-/* Mangled Changes; moved here during the commit after 9f1c8fe */
-
-
-
-/* Links */
+/* Default Links */
 
 a {
   color: var(--color-moss);
@@ -112,16 +116,42 @@ a:active {
   color: var(--color-andesite);
 }
 
-/* End of Mangled Changes */
+/* Default Figures */
 
-#wrapper {
-  display: grid;
-  grid-template-columns: minmax(auto, 250px) 1fr;
-  grid-template-rows: 150px auto 4rem;
-  row-gap: var(--space-med);
+figure {
+  border: 1px solid var(--color-sandstone);
+  border-radius: var(--corner-radius);
+  background-color: var(--color-sandstone-l2);
+  font-size: 0.9rem;
+  padding: var(--space-xs);
+  width: 40%;
 }
 
-/* Banner styles */
+figcaption {
+  text-align: center;
+  margin: var(--space-xs) 0;
+}
+
+
+/* Default Headers + Footers */
+
+header > ul,
+footer > ul {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header li,
+footer li {
+  list-style-type: none;
+}
+
+/* Global Components */
+
+/* Components - Banner */
 
 #banner {
   padding: var(--space-med);
@@ -146,62 +176,7 @@ a:active {
   margin: 0;
 }
 
-/* End banner styles */
-
-/* Part of Mangled Changes; moved here during the commit after 9f1c8fe */
-
-/* Header + Footer defaults */
-
-header > ul,
-footer > ul {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header li,
-footer li {
-  list-style-type: none;
-}
-
-/* Recent Posts */
-
-#recent > ul {
-  list-style-type: none;
-}
-
-#recent li {
-  margin: var(--space-xs) 0;
-}
-
-#recent > h3 {
-  margin-left: 0;
-  margin-top: var(--space-med);
-}
-
-/* Site footer */
-
-#site-footer {
-  grid-column: 2 / 3;
-  background-color: var(--color-andesite-d1);
-  color: var(--color-sandstone-l1);
-  font-size: 0.9rem;
-}
-
-#site-footer li {
-  padding: 0 var(--space-lg);
-  text-align: center;
-}
-
-#site-footer a {
-  color: var(--color-sandstone-d1);
-}
-
-/* End of Mangled Changes */
-
-/* Navbar styles */
+/* Components - Navbar */
 
 #navbar {
   grid-column: 1;
@@ -261,9 +236,49 @@ footer li {
   color: var(--color-gold);
 }
 
-/* End navbar styles */
+/* Components - Site Footer */
 
-/* Content container */
+#site-footer {
+  grid-column: 2 / 3;
+  background-color: var(--color-andesite-d1);
+  color: var(--color-sandstone-l1);
+  font-size: 0.9rem;
+}
+
+#site-footer li {
+  padding: 0 var(--space-lg);
+  text-align: center;
+}
+
+#site-footer a {
+  color: var(--color-sandstone-d1);
+}
+
+/* Components - Recent Posts */
+
+#recent > ul {
+  list-style-type: none;
+}
+
+#recent li {
+  margin: var(--space-xs) 0;
+}
+
+#recent > h3 {
+  margin-left: 0;
+  margin-top: var(--space-med);
+}
+
+/* Containers */
+
+#wrapper {
+  display: grid;
+  grid-template-columns: minmax(auto, 250px) 1fr;
+  grid-template-rows: 150px auto 4rem;
+  row-gap: var(--space-med);
+}
+
+/* Content Grid */
 
 div.content {
   margin: 0 var(--space-med);
@@ -272,6 +287,8 @@ div.content {
   column-gap: var(--space-med);
   align-content: start;
 }
+
+/* Content Grid cells */
 
 .cell {
   background-color: var(--color-sandstone-l1);
@@ -288,51 +305,7 @@ div.content {
   padding: var(--space-sm) var(--space-sm) 0;
 }
 
-
-img,
-video {
-  height: auto;
-  max-width: 100%;
-}
-
-/* Entry Styles */
-
-dl.trail-stats {
-  border-top: var(--article-border);
-  padding: var(--space-xs) var(--space-sm);
-  color: var(--color-andesite);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-dl.trail-stats dt {
-  font-weight: bold;
-}
-
-dl.trail-stats dt::after {
-  content: ":";
-}
-
-/* Figure styles */
-
-figure {
-  border: 1px solid var(--color-sandstone);
-  border-radius: var(--corner-radius);
-  background-color: var(--color-sandstone-l2);
-  font-size: 0.9rem;
-  padding: var(--space-xs);
-  width: 40%;
-}
-
-figure > img {
-  max-width: 100%;
-}
-
-figcaption {
-  text-align: center;
-  margin: var(--space-xs) 0;
-}
+/* Blog Blurbs */
 
 .blogBlurb {
   background-color: var(--color-sandstone-l2);
@@ -354,6 +327,8 @@ figcaption {
   margin-top: 0;
 }
 
+/* Destination Grid */
+
 #destination-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -361,6 +336,8 @@ figcaption {
   gap: var(--space-med);
   align-items: stretch;
 }
+
+/* Destination Cards */
 
 a.destination-card {
   border: 2px solid var(--color-andesite);
@@ -401,6 +378,25 @@ span.cont-reading {
 a.destination-card:hover {
   border-color: var(--color-gold);
   background-color: var(--color-andesite-d1);
+}
+
+/* Destination Trail Stats */
+
+dl.trail-stats {
+  border-top: var(--article-border);
+  padding: var(--space-xs) var(--space-sm);
+  color: var(--color-andesite);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+dl.trail-stats dt {
+  font-weight: bold;
+}
+
+dl.trail-stats dt::after {
+  content: ":";
 }
 
 /* Utility Classes */
