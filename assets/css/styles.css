@@ -9,7 +9,7 @@
   /* Shades */
   --color-sandstone-l1: #eae3d6;
   --color-sandstone-l2: #f8f6f2;
-  --color-sandstone-d1: #CFBEA0;
+  --color-sandstone-d1: #cfbea0;
   --color-sandstone-d2: #c8b592;
   --color-andesite-d1: #2e2427;
   --color-moss-d1: #414e2c;
@@ -28,8 +28,8 @@
   --corner-radius: 5px;
   --corner-radius-lg: 10px;
 
-    /* Border */
-    --article-border: 1px solid var(--color-sandstone-d1);
+  /* Border */
+  --article-border: 1px solid var(--color-sandstone-d1);
 }
 
 * {
@@ -131,7 +131,6 @@ figcaption {
   text-align: center;
   margin: var(--space-xs) 0;
 }
-
 
 /* Default Headers + Footers */
 
@@ -292,12 +291,12 @@ div.content {
 
 .cell {
   background-color: var(--color-sandstone-l1);
-  padding: var(--space-sm) var(--space-lg)  var(--space-med);
+  padding: var(--space-sm) var(--space-lg) var(--space-med);
   border-radius: var(--corner-radius);
 }
 
 .cell header {
-  border-bottom: var(--article-border)
+  border-bottom: var(--article-border);
 }
 
 .cell footer {
