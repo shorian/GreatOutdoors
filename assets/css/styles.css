@@ -167,8 +167,11 @@ footer li {
 
 #banner > h1 {
   font-size: 50px;
-  text-shadow: 1px 0 var(--color-gold), -1px 0 var(--color-gold),
-    0 1px var(--color-gold), 0 -1px var(--color-gold);
+  text-shadow:
+    1px 0 var(--color-gold),
+    -1px 0 var(--color-gold),
+    0 1px var(--color-gold),
+    0 -1px var(--color-gold);
   margin: 0;
 }
 
