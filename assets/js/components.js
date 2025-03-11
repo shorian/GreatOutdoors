@@ -24,7 +24,7 @@ class NavBar extends HTMLElement {
 
         this.innerHTML = `
          <nav id="navbar">
-        <a href=""><img id="logo" src="./assets/images/logo.png" alt="Great Outdoors" /></a>
+        <a href=""><img id="logo" src="/assets/images/logo.png" alt="Great Outdoors" /></a>
         <ul>
           <li>
             <a href="index.html">Home</a>
