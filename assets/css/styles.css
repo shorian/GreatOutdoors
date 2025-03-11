@@ -399,3 +399,74 @@ dl.trail-stats dt::after {
 .fr {
   float: right;
 }
+
+/* Our Contact Form */
+fieldset {
+  border: 2px solid var(--color-moss);
+  padding: var(--space-med);
+  border-radius: var(--corner-radius);
+}
+
+legend {
+  padding: 0 var(--space-sm);
+  font-weight: bold;
+  color: var(--color-moss-d1);
+}
+
+label {
+  display: block;
+  margin-top: var(--space-med);
+  font-weight: bold;
+}
+.mt0 {
+  margin-top: 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: var(--space-sm);
+  margin-top: var(--space-sm);
+  border: var(--article-border);
+  border-radius: var(--corner-radius);
+}
+
+textarea {
+  resize: vertical;
+}
+
+ul {
+  list-style: none;
+  padding: var(--space-xs) 0;
+}
+
+ul li {
+  margin-bottom: var(--space-xs);
+}
+
+input[type="submit"], input[type="reset"]{
+  display: block;
+  width: auto;
+  background-color: var(--color-moss);
+  color: var(--color-sandstone-l2);
+  padding: var(--space-sm);
+  border: none;
+  border-radius: var(--corner-radius);
+  cursor: pointer;
+  margin-top: var(--space-sm);
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--color-moss-d1);
+}
+input[type="reset"] {
+  color: var(--color-moss);
+  background-color: var(--color-sandstone-l2);
+}
+input[type="reset"]:hover {
+  color: white;
+  background-color: var(--color-gold);
+}
