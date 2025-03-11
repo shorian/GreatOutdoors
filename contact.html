@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <title>Welcome to the Great Outdoors!</title>
+  </head>
+
+  <body>
+    <script src="assets/js/components.js"></script>
+    <div id="wrapper">
+      <navbar-component></navbar-component>
+      <banner-component></banner-component>
+      <div class="content">
+        <main class="cell">
+          <h2>Contact Poul</h2>
+          <form action="#" method="#">
+            <fieldset>
+              <legend>Email Me</legend>
+              <label for="name" class="mt0">Name</label>
+              <input type="text" name="name" id="name" required />
+
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+
+              <!-- Outdoor Activities -->
+              <label>Favorite Outdoor Activities</label>
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="activities[]"
+                    id="hiking"
+                    value="hiking" />
+                  Hiking
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="activities[]"
+                    id="camping"
+                    value="camping" />
+                  Camping
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="activities[]"
+                    id="fishing"
+                    value="fishing" />
+                  Fishing
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="activities[]"
+                    id="kayaking"
+                    value="kayaking" />
+                  Kayaking
+                </li>
+              </ul>
+
+              <!-- Comments -->
+              <label for="comments">Comments</label>
+              <textarea
+                name="comments"
+                id="comments"
+                rows="6"
+                placeholder="Leave us your thoughts!"></textarea>
+
+              <input type="submit" name="submit" value="Send Message" />
+              <input type="reset" name="reset" value="Reset" />
+            </fieldset>
+          </form>
+        </main>
+        <recent-posts></recent-posts>
+      </div>
+      <footer id="site-footer">
+        <ul>
+          <li>©2025 Poul Nichols</li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Terms</a></li>
+          <li>Enjoying The Great Outdoors? <a href="">Buy me a coffee</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
