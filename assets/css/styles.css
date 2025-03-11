@@ -446,7 +446,8 @@ ul li {
   margin-bottom: var(--space-xs);
 }
 
-input[type="submit"], input[type="reset"]{
+input[type="submit"],
+input[type="reset"] {
   display: block;
   width: auto;
   background-color: var(--color-moss);

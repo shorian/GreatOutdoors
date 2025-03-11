@@ -20,38 +20,62 @@
         <main class="cell">
           <h2>Contact Poul</h2>
           <form action="#" method="#">
-              <fieldset> 
-                <legend>Email Me</legend> 
-                  <label for="name" class="mt0">Name</label>
-                  <input type="text" name="name" id="name" required>
-  
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="email" required>
-  
-                  <!-- Outdoor Activities -->
-                  <label>Favorite Outdoor Activities</label>
-                  <ul>
-                      <li>
-                          <input type="checkbox" name="activities[]" id="hiking" value="hiking"> Hiking
-                      </li>
-                      <li>
-                          <input type="checkbox" name="activities[]" id="camping" value="camping"> Camping
-                      </li>
-                      <li>
-                          <input type="checkbox" name="activities[]" id="fishing" value="fishing"> Fishing
-                      </li>
-                      <li>
-                          <input type="checkbox" name="activities[]" id="kayaking" value="kayaking"> Kayaking
-                      </li>
-                  </ul>
-  
-                  <!-- Comments -->
-                  <label for="comments">Comments</label>
-                  <textarea name="comments" id="comments" rows="6" placeholder="Leave us your thoughts!"></textarea>
-  
-                  <input type="submit" name="submit" value="Send Message">
-                  <input type="reset" name="reset" value="Reset">
-              </fieldset>
+            <fieldset>
+              <legend>Email Me</legend>
+              <label for="name" class="mt0">Name</label>
+              <input type="text" name="name" id="name" required />
+
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+
+              <!-- Outdoor Activities -->
+              <label>Favorite Outdoor Activities</label>
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="activities[]"
+                    id="hiking"
+                    value="hiking" />
+                  Hiking
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="activities[]"
+                    id="camping"
+                    value="camping" />
+                  Camping
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="activities[]"
+                    id="fishing"
+                    value="fishing" />
+                  Fishing
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="activities[]"
+                    id="kayaking"
+                    value="kayaking" />
+                  Kayaking
+                </li>
+              </ul>
+
+              <!-- Comments -->
+              <label for="comments">Comments</label>
+              <textarea
+                name="comments"
+                id="comments"
+                rows="6"
+                placeholder="Leave us your thoughts!"></textarea>
+
+              <input type="submit" name="submit" value="Send Message" />
+              <input type="reset" name="reset" value="Reset" />
+            </fieldset>
           </form>
         </main>
         <recent-posts></recent-posts>
