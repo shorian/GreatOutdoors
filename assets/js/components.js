@@ -67,14 +67,14 @@ class RecentPosts extends HTMLElement {
 }
 
 class Footer extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    this.setAttribute("style", "display: contents;");
+    connectedCallback() {
+        this.setAttribute("style", "display: contents;");
 
-    this.innerHTML = `
+        this.innerHTML = `
               <footer id="site-footer">
         <ul>
           <li>©2025 Poul Nichols</li>
@@ -84,7 +84,7 @@ class Footer extends HTMLElement {
       </footer>
         
       `;
-  }
+    }
 }
 
 customElements.define("banner-component", Banner);
