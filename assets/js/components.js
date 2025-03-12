@@ -66,6 +66,29 @@ class RecentPosts extends HTMLElement {
     }
 }
 
+class Footer extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.setAttribute("style", "display: contents;");
+
+    this.innerHTML = `
+              <footer id="site-footer">
+        <ul>
+          <li>©2025 Poul Nichols</li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Terms</a></li>
+          <li>Enjoying The Great Outdoors? <a href="">Buy me a coffee</a></li>
+        </ul>
+      </footer>
+        
+      `;
+  }
+}
+
 customElements.define("banner-component", Banner);
 customElements.define("navbar-component", NavBar);
 customElements.define("recent-posts", RecentPosts);
+customElements.define("site-footer", Footer);
