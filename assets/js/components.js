@@ -78,8 +78,7 @@ class Footer extends HTMLElement {
               <footer id="site-footer">
         <ul>
           <li>©2025 Poul Nichols</li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Terms</a></li>
+          <li><a href="/terms.html">Terms</a></li>
           <li>Enjoying The Great Outdoors? <a href="">Buy me a coffee</a></li>
         </ul>
       </footer>
