@@ -7,6 +7,7 @@ class Banner extends HTMLElement {
         this.setAttribute("style", "display: contents;");
 
         this.innerHTML = `
+        <script defer src="https://chirpy.dev/bootstrapper.js" data-chirpy-domain="shorian.githubpages.io"></script>
         <header id="banner">
           <h1>The Great Outdoors: A Poul Nichols Experience</h1>
       </header>
@@ -82,7 +83,23 @@ class Footer extends HTMLElement {
           <li>Enjoying The Great Outdoors? <a href="">Buy me a coffee</a></li>
         </ul>
       </footer>
-        
+
+      `;
+    }
+}
+
+class Comments extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        // this.setAttribute("style", "display: contents;");
+
+        this.innerHTML = `
+        <section class="cell">
+        <div data-chirpy-theme="light" data-chirpy-comment="true" id="chirpy-comment"></div>
+        </section>
       `;
     }
 }
@@ -91,3 +108,4 @@ customElements.define("banner-component", Banner);
 customElements.define("navbar-component", NavBar);
 customElements.define("recent-posts", RecentPosts);
 customElements.define("site-footer", Footer);
+customElements.define("comments-component", Comments);
