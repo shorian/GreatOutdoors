@@ -88,10 +88,15 @@ class Comments extends HTMLElement {
         this.setAttribute("style", "display: contents;");
 
         this.innerHTML = `
-          <section class="cell col1" id="comments">
-            <div class="commentbox"></div>
-            <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-            <script>commentBox('5729715172147200-proj')</script>
+          <section id="comments">
+            <script src="https://utteranc.es/client.js"
+              repo="shorian/GreatOutdoors"
+              issue-term="title"
+              label="site-comment"
+              theme="github-light"
+              crossorigin="anonymous"
+              async>
+            </script>
           </section>
       `;
     }
