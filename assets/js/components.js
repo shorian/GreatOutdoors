@@ -92,7 +92,7 @@ class Comments extends HTMLElement {
         // this.setAttribute("style", "display: contents;");
 
         this.innerHTML = `
-          <section class="cell">
+          <section class="cell" id="comments">
             <div data-chirpy-theme="light" data-chirpy-comment="true" id="chirpy-comment"></div>
           </section>
       `;
