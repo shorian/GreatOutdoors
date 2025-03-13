@@ -7,10 +7,6 @@ class Banner extends HTMLElement {
         this.setAttribute("style", "display: contents;");
 
         this.innerHTML = `
-          <script
-              defer
-              src="https://chirpy.dev/bootstrapper.js"
-              data-chirpy-domain="shorian.github.io"></script>
             <header id="banner">
               <h1>The Great Outdoors: A Poul Nichols Experience</h1>
             </header>
