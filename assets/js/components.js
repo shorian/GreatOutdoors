@@ -49,7 +49,7 @@ class RecentPosts extends HTMLElement {
         this.setAttribute("style", "display: contents;");
 
         this.innerHTML = `
-          <nav id="recent" class="cell">
+          <nav id="recent" class="cell row1 col2">
                   <h3>Recent Posts</h3>
           <ul>
               <li><a href="/GreatOutdoors/destinations/lake.html">Trip Report: Lake 22</a><br>February 13, , 2025</li>
@@ -89,10 +89,10 @@ class Comments extends HTMLElement {
     }
 
     connectedCallback() {
-        // this.setAttribute("style", "display: contents;");
+        this.setAttribute("style", "display: contents;");
 
         this.innerHTML = `
-          <section class="cell" id="comments">
+          <section class="cell col1" id="comments">
             <div data-chirpy-theme="light" data-chirpy-comment="true" id="chirpy-comment"></div>
           </section>
       `;

@@ -275,7 +275,7 @@ div.content {
   margin: 0 var(--space-med);
   display: grid;
   grid-template-columns: 3fr 1fr;
-  column-gap: var(--space-med);
+  gap: var(--space-med);
   align-content: start;
 }
 
@@ -400,6 +400,22 @@ dl.trail-stats dt::after {
   float: right;
 }
 
+.mt0 {
+  margin-top: 0;
+}
+
+.col1 {
+  grid-column: 1;
+}
+
+.col2 {
+  grid-column: 2;
+}
+
+.row1 {
+  grid-row: 1;
+}
+
 /* Our Contact Form */
 fieldset {
   border: 2px solid var(--color-moss);
@@ -417,9 +433,6 @@ label {
   display: block;
   margin-top: var(--space-med);
   font-weight: bold;
-}
-.mt0 {
-  margin-top: 0;
 }
 
 input[type="text"],
