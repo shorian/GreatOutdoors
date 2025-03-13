@@ -64,7 +64,7 @@ class Footer extends HTMLElement {
     }
 
     connectedCallback() {
-        this.setAttribute("style", "display: contents;");
+        this.setAttribute("style", "display: contents; padding-top: -3.5rem;");
 
         this.innerHTML = `
           <footer id="site-footer">
@@ -89,7 +89,9 @@ class Comments extends HTMLElement {
 
         this.innerHTML = `
           <section class="cell col1" id="comments">
-            <div data-chirpy-theme="light" data-chirpy-comment="true" id="chirpy-comment"></div>
+            <div class="commentbox"></div>
+            <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+            <script>commentBox('5729715172147200-proj')</script>
           </section>
       `;
     }
