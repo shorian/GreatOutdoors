@@ -205,7 +205,6 @@ footer li {
 
   > li {
     border-radius: var(--corner-radius);
-    background-color: var(--color-andesite);
     font-family: var(--heading-font);
     font-optical-sizing: auto;
     flex: 1 0 auto;
@@ -214,6 +213,7 @@ footer li {
       display: block;
       padding: 10px;
       text-decoration: none;
+      background-color: var(--color-andesite);
       color: var(--color-gold);
 
       &:hover {
